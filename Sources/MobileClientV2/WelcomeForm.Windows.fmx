@@ -1,0 +1,21 @@
+inherited FormWelcome_Windows: TFormWelcome_Windows
+  DesignerMasterStyle = 0
+  inherited lblTitle: TLabel
+    Visible = False
+  end
+  inherited Text1: TLabel
+    TextSettings.Font.Size = 18.000000000000000000
+  end
+  inherited Layout1: TLayout
+    Size.Height = 376.000000000000000000
+    inherited GridLayout1: TGridLayout
+      Size.Height = 376.000000000000000000
+      inherited cmdStartModeBrowse: TButton
+        Enabled = False
+        StyledSettings = [Family, Style, FontColor]
+        StyleLookup = 'buttonstyle'
+        TextSettings.Font.Size = 14.000000000000000000
+      end
+    end
+  end
+end

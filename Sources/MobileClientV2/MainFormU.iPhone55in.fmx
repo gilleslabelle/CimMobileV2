@@ -1,0 +1,77 @@
+inherited MainForm_iPhone55in: TMainForm_iPhone55in
+  ClientHeight = 716
+  ClientWidth = 414
+  DesignerMasterStyle = 2
+  inherited TabControl1: TTabControl
+    Size.Width = 414.000000000000000000
+    Size.Height = 716.000000000000000000
+    inherited tabListCims: TTabItem
+      Size.Width = 138.000000000000000000
+      ExplicitSize.cx = 212.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited Layout1: TLayout
+        Size.Width = 414.000000000000000000
+        Size.Height = 667.000000000000000000
+        inherited tbListCimHeader: TToolBar
+          Size.Width = 414.000000000000000000
+          inherited lblTitleCim: TLabel
+            Size.Width = 334.000000000000000000
+          end
+          inherited lblSousTitleCim: TLabel
+            Size.Width = 334.000000000000000000
+          end
+        end
+        inherited TabControl2: TTabControl
+          Size.Width = 414.000000000000000000
+          Size.Height = 623.000000000000000000
+          inherited TabCimList: TTabItem
+            Size.Width = 207.000000000000000000
+            ExplicitSize.cx = 78.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+          end
+          inherited tabCimMap: TTabItem
+            Size.Width = 207.000000000000000000
+            ExplicitSize.cx = 82.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited MapView1: TMapView
+              Size.Width = 414.000000000000000000
+              Size.Height = 574.000000000000000000
+            end
+          end
+        end
+      end
+      inherited MultiView1: TMultiView
+        Size.Height = 667.000000000000000000
+        Visible = False
+        inherited lbOptions: TListBox
+          Size.Height = 667.000000000000000000
+          Viewport.Width = 208.000000000000000000
+          Viewport.Height = 667.000000000000000000
+          inherited ListBoxGroupHeader1: TListBoxGroupHeader
+            Size.Height = 56.000000000000000000
+          end
+          inherited ListBoxGroupHeader3: TListBoxGroupHeader
+            Size.Height = 56.000000000000000000
+          end
+          inherited ListBoxGroupHeader2: TListBoxGroupHeader
+            Size.Height = 56.000000000000000000
+          end
+        end
+      end
+    end
+    inherited tabCimDetails: TTabItem
+      Size.Width = 138.000000000000000000
+      ExplicitSize.cx = 212.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited ListView1: TListView
+        Size.Width = 414.000000000000000000
+        Size.Height = 667.000000000000000000
+      end
+    end
+    inherited tabCimImage: TTabItem
+      Size.Width = 138.000000000000000000
+      ExplicitSize.cx = 214.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+  end
+end

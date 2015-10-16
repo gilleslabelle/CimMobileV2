@@ -1,0 +1,60 @@
+object WaitForm: TWaitForm
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'Working'
+  ClientHeight = 912
+  ClientWidth = 600
+  Transparency = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object WorkingPanel: TRectangle
+    Align = Contents
+    Fill.Kind = None
+    Size.Width = 600.000000000000000000
+    Size.Height = 912.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object bgImage: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Align = Contents
+      Size.Width = 600.000000000000000000
+      Size.Height = 912.000000000000000000
+      Size.PlatformDefault = False
+      WrapMode = Stretch
+    end
+    object GrayBox: TRectangle
+      Align = Center
+      Fill.Color = claGray
+      Size.Width = 129.000000000000000000
+      Size.Height = 121.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object WorkingLBL: TLabel
+        Align = Bottom
+        StyledSettings = [Family, Size]
+        Position.Y = 98.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Saving...'
+      end
+      object AniIndicator: TAniIndicator
+        Align = Center
+        Size.Width = 57.000000000000000000
+        Size.Height = 58.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+end

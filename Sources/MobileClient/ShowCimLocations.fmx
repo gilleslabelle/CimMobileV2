@@ -1,0 +1,38 @@
+object ShowCimLocationsForm: TShowCimLocationsForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object SpeedButton1: TSpeedButton
+      Align = Left
+      Margins.Right = 5.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      Text = 'Retour'
+      OnClick = SpeedButton1Click
+    end
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 504.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+end

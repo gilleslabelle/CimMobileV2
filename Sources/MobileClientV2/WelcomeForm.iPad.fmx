@@ -1,0 +1,27 @@
+inherited FormWelcome_iPad: TFormWelcome_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 0
+  inherited lblTitle: TLabel
+    Size.Width = 768.000000000000000000
+    StyleLookup = 'toollabel'
+  end
+  inherited Text1: TLabel
+    ControlType = Platform
+    Size.Width = 718.000000000000000000
+    Size.Height = 152.000000000000000000
+    StyleLookup = 'labelstyle'
+    TextSettings.Trimming = Word
+  end
+  inherited Layout1: TLayout
+    Size.Width = 768.000000000000000000
+    Size.Height = 779.000000000000000000
+    inherited GridLayout1: TGridLayout
+      Position.X = 259.000000000000000000
+      Size.Height = 779.000000000000000000
+      inherited cmdStartModeBrowse: TButton
+        Enabled = False
+      end
+    end
+  end
+end

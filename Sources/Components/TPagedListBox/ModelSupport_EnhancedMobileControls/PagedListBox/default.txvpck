@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="0ylu1rsofsj_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:EnhancedMobileControls:PagedListBox.TPagedListBoxLoadItemInfo">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="241,1,177,144" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBoxLoadItemInfo.Items" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBoxLoadItemInfo.HasLoaded" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBoxLoadItemInfo.PageNumber" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBoxLoadItemInfo.PageSize" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBoxLoadItemInfo.HasMore" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:EnhancedMobileControls:PagedListBox.TPagedListBoxLoadItemsLoad">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="241,164,190,36" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:EnhancedMobileControls:PagedListBox.TPagedListBox">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="450,1,324,627" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FOnDataLoaded" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FLoadedFrom" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FPageNumber" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FPageSize" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FDoNextLoadTimer" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FOnDataFailedLoaded" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FOnExceptionDuringLoad" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FClearOnDataFail" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FOnLoadComplete" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FLock" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.LoadNextPage(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.SetOnDataFailedLoaded(PagedListBox.TPagedListBoxLoadItemsLoad)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.SetOnDataLoaded(PagedListBox.TPagedListBoxLoadItemsLoad)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.SetPageNumber(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.SetPageSize(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.LoadPage(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.AddItems(System.Generics.Collections.TList&lt;FMX.ListBox.TListBoxItem&gt;)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.CreateLoadingListBoxItem()" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.LoadNextPageFromTimer(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.SetOnExceptionDuringLoad(PagedListBox.TPagedListBoxLoadException)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.SetClearOnDataFail(System.Boolean)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.SetOnLoadComplete(System.Classes.TNotifyEvent)" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FBottomItem" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FLastItem" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.Create(System.Classes.TComponent)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.Destroy()" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListBox.LoadedFrom" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.AddLoadMore()" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListBox.Start()" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListBox.PageSize" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListBox.PageNumber" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListBox.OnLoadSinglePage" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListBox.OnDataFailedLoaded" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListBox.OnExceptionDuringLoad" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListBox.ClearOnDataFail" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListBox.OnLoadComplete" />
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FOnDataLoaded">
+        <property name="sourceAnchor" value="450,182" />
+        <property name="targetAnchor" value="431,182" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FLoadedFrom">
+        <property name="sourceAnchor" value="450,360" />
+        <property name="targetAnchor" value="231,360" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FOnDataFailedLoaded">
+        <property name="sourceAnchor" value="450,174" />
+        <property name="targetAnchor" value="431,174" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FOnExceptionDuringLoad">
+        <property name="sourceAnchor" value="450,237" />
+        <property name="targetAnchor" value="428,237" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListBox.LoadedFrom">
+        <property name="sourceAnchor" value="450,352" />
+        <property name="targetAnchor" value="231,352" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListBox.OnLoadSinglePage">
+        <property name="sourceAnchor" value="450,166" />
+        <property name="targetAnchor" value="431,167" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListBox.OnDataFailedLoaded">
+        <property name="sourceAnchor" value="450,164" />
+        <property name="targetAnchor" value="425,164" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListBox.OnExceptionDuringLoad">
+        <property name="sourceAnchor" value="450,229" />
+        <property name="targetAnchor" value="428,229" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FLastItem">
+        <property name="sourceAnchor" value="450,128" />
+        <property name="targetAnchor" value="222,128" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListBox.FBottomItem">
+        <property name="sourceAnchor" value="450,136" />
+        <property name="targetAnchor" value="222,136" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:EnhancedMobileControls:PagedListBox.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.@unitclass.Register()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:EnhancedMobileControls:PagedListBox.TPagedListBoxLoadException">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="241,219,187,36" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:EnhancedMobileControls:PagedListBox.TframeLoadingMoreResults">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="241,274,173,162" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TframeLoadingMoreResults.MainMessage" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TframeLoadingMoreResults.FOnPaint" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TframeLoadingMoreResults.SetOnPaint(System.Classes.TNotifyEvent)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TframeLoadingMoreResults.Paint()" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TframeLoadingMoreResults.OnPaint" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:EnhancedMobileControls:PagedListBox.TPagedListBoxLoadLocation">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="52,311,179,98" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBoxLoadLocation.llUnknown" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBoxLoadLocation.llFromSource" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListBoxLoadLocation.llFromBackup" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,212,282" />
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.FFrame">
+        <property name="sourceAnchor" value="222,245" />
+        <property name="targetAnchor" value="248,274" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.FStartTheLoad" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.CreateInnerFrame()" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.CascadeRepaint(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.PerformDataReload()" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.FFrame" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.FHasNotified" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.FOwner" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.Paint()" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.ChangeText(System.string)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.ClearState()" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.StartTheLoad" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.SetStartTheLoad(System.Classes.TNotifyEvent)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem.Create(System.Classes.TComponent)" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:EnhancedMobileControls:PagedListBox.TPagedListView">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="121,455,324,627" />
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListView.FOnDataLoaded">
+        <property name="sourceAnchor" value="336,455" />
+        <property name="targetAnchor" value="336,200" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListView.FLoadedFrom">
+        <property name="sourceAnchor" value="176,455" />
+        <property name="targetAnchor" value="176,409" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListView.FOnDataFailedLoaded">
+        <property name="sourceAnchor" value="328,455" />
+        <property name="targetAnchor" value="328,200" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListView.FOnExceptionDuringLoad">
+        <property name="sourceAnchor" value="342,455" />
+        <property name="targetAnchor" value="342,255" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListView.FBottomItem">
+        <property name="sourceAnchor" value="171,455" />
+        <property name="targetAnchor" value="171,292" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListView.FLastItem">
+        <property name="sourceAnchor" value="163,455" />
+        <property name="targetAnchor" value="163,292" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListView.LoadedFrom">
+        <property name="sourceAnchor" value="168,455" />
+        <property name="targetAnchor" value="168,409" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListView.OnLoadSinglePage">
+        <property name="sourceAnchor" value="320,455" />
+        <property name="targetAnchor" value="320,200" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListView.OnDataFailedLoaded">
+        <property name="sourceAnchor" value="312,455" />
+        <property name="targetAnchor" value="312,200" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TPagedListView.OnExceptionDuringLoad">
+        <property name="sourceAnchor" value="350,455" />
+        <property name="targetAnchor" value="350,255" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListView.FOnDataLoaded" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListView.FLoadedFrom" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListView.FPageNumber" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListView.FPageSize" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListView.FDoNextLoadTimer" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListView.FOnDataFailedLoaded" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListView.FOnExceptionDuringLoad" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListView.FClearOnDataFail" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListView.FOnLoadComplete" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListView.FLock" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.LoadNextPage(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.SetOnDataFailedLoaded(PagedListBox.TPagedListBoxLoadItemsLoad)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.SetOnDataLoaded(PagedListBox.TPagedListBoxLoadItemsLoad)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.SetPageNumber(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.SetPageSize(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.LoadPage(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.AddItems(System.Generics.Collections.TList&lt;FMX.ListBox.TListBoxItem&gt;)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.CreateLoadingListBoxItem()" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.LoadNextPageFromTimer(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.SetOnExceptionDuringLoad(PagedListBox.TPagedListBoxLoadException)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.SetClearOnDataFail(System.Boolean)" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListView.FBottomItem" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TPagedListView.FLastItem" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListView.LoadedFrom" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.AddLoadMore()" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.Start()" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListView.PageSize" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListView.PageNumber" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListView.OnLoadSinglePage" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListView.OnDataFailedLoaded" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListView.OnExceptionDuringLoad" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListView.ClearOnDataFail" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TPagedListView.OnLoadComplete" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.SetOnLoadComplete(System.Classes.TNotifyEvent)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.Create(System.Classes.TComponent)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TPagedListView.Destroy()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="812,1,212,282" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.FStartTheLoad" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.SetStartTheLoad(System.Classes.TNotifyEvent)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.CreateInnerFrame()" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.CascadeRepaint(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.PerformDataReload()" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.FFrame" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.FHasNotified" />
+      <reference referencedUin="delphi:e_field:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.FOwner" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.Paint()" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.Create(System.Classes.TComponent)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.ChangeText(System.string)" />
+      <reference referencedUin="delphi:e_method:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.ClearState()" />
+      <reference referencedUin="delphi:e_property:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.StartTheLoad" />
+      <reference referencedUin="delphi:l_ast:src:EnhancedMobileControls:PagedListBox.TListBoxBottomLoadingItem1.FFrame">
+        <property name="sourceAnchor" value="812,278" />
+        <property name="targetAnchor" value="414,278" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+  </view>
+</nodeSet>

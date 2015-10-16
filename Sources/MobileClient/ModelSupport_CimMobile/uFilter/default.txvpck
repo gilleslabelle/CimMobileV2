@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="ke730sy0vzn_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:CimMobile:uFilter.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.@unitclass.FormFilter" />
+      <reference referencedUin="delphi:l_ast:src:CimMobile:uFilter.@unitclass.FormFilter" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:CimMobile:uFilter.TFormFilter">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,288,1362" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lbFiltres" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.ListBoxGroupHeader1" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lbiFiltreTypeCimArcheoHistoire" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lbiFiltreTypeCimCimetieres" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lbiFiltreTypeCimColumbariums" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lbiFiltreTypeCimCryptes" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lbiFiltreTypeCimDivers" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.tbFiltres" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.Label7" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.btnShowMap" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lbiFiltreRegions" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lbiFiltreMRCs" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lbiFiltreVilles" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lbiFiltreAucun" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.ListBoxGroupHeader2" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.SwitchFiltreTypeCimArcheoHistoire" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.SwitchFiltreTypeCimCimetieres" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.SwitchFiltreTypeCimColumbariums" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.SwitchFiltreTypeCimCryptes" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.SwitchFiltreTypeCimDivers" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.TabControl1" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.tabFilter" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.tabVilles" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.tabRegions" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.tabMrcs" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.ActionList1" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.ToolBar1" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.Label1" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.btnVillesBack" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.ToolBar2" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.Label2" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.btnRegionsBack" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.ToolBar3" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.Label3" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.btnMRCsBack" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lvVilles" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.BindingsList1" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lvRegions" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.lvMRCs" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.BindSourceListRegions" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.BindSourceQryListMRC" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.actGotoTabVilles" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.actGotoTabRegions" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.actGotoTabMRCs" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.BindSourceDB2" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.LinkListControlToField1" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.BindSourceDB1" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.LinkListControlToField2" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.SpeedButton1" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.actCloseForm" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.SpeedButton2" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.SpeedButton3" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.BindSourceDB3" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.LinkListControlToField3" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.FormCreate(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.SwitchFiltreTypeCimArcheoHistoireSwitch(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.btnShowMapClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.lbiFiltreVillesClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.lbiFiltreRegionsClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.lbiFiltreMRCsClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.btnVillesBackClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.btnRegionsBackClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.btnMRCsBackClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.SpeedButton1Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.lbiFiltreAucunClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.lvVillesItemClick(System.TObject,FMX.ListView.TListViewItem)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.actCloseFormExecute(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.lvRegionsItemClick(System.TObject,FMX.ListView.TListViewItem)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.lvMRCsItemClick(System.TObject,FMX.ListView.TListViewItem)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.SpeedButton2Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.SpeedButton3Click(System.TObject)" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.FFiltresCimActif" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.FFiltreGeneralActif" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFormFilter.FInitComplete" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.SetFiltresCimActif(set@uFilter.TFiltreCimActif)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.SetItemDataFiltreCim(FMX.StdCtrls.TSwitch,uFilter.TFiltreCimActif)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.ClearAllFilterDetails()" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.SetFiltreGeneralActif(uFilter.TFiltreGeneralActif)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.ShowListViewSearchOption(FMX.ListView.TListView)" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.SetAllFilterON()" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.getActiveFilterString()" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFormFilter.GetFilterCaption(uFilter.TFiltreGeneralActif)" />
+      <reference referencedUin="delphi:e_property:src:CimMobile:uFilter.TFormFilter.FiltresCimActif" />
+      <reference referencedUin="delphi:e_property:src:CimMobile:uFilter.TFormFilter.FiltreGeneralActif" />
+      <reference referencedUin="delphi:e_property:src:CimMobile:uFilter.TFormFilter.InitComplete" />
+      <reference referencedUin="delphi:l_ast:src:CimMobile:uFilter.TFormFilter.FFiltresCimActif">
+        <property name="sourceAnchor" value="298,23" />
+        <property name="targetAnchor" value="317,23" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:CimMobile:uFilter.TFormFilter.FFiltreGeneralActif">
+        <property name="sourceAnchor" value="298,407" />
+        <property name="targetAnchor" value="317,407" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:CimMobile:uFilter.TFormFilter.FiltresCimActif">
+        <property name="sourceAnchor" value="298,15" />
+        <property name="targetAnchor" value="317,15" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:CimMobile:uFilter.TFormFilter.FiltreGeneralActif">
+        <property name="sourceAnchor" value="298,399" />
+        <property name="targetAnchor" value="317,399" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:CimMobile:uFilter.TFiltresCimActif">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="317,1,229,36" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:CimMobile:uFilter.TFiltreGeneralActifTypes">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="317,56,157,113" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFiltreGeneralActifTypes.Aucun" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFiltreGeneralActifTypes.Ville" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFiltreGeneralActifTypes.MRC" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFiltreGeneralActifTypes.Region" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:CimMobile:uFilter.TFiltreCimActif">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="317,188,100,128" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFiltreCimActif.Archeo" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFiltreCimActif.Crypte" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFiltreCimActif.Cimetieres" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFiltreCimActif.Autre" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFiltreCimActif.Columbarium" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:CimMobile:uFilter.TFiltreGeneralActif">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="317,335,197,145" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFiltreGeneralActif.Types" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFiltreGeneralActif.ID" />
+      <reference referencedUin="delphi:e_field:src:CimMobile:uFilter.TFiltreGeneralActif.Caption" />
+      <reference referencedUin="delphi:e_method:src:CimMobile:uFilter.TFiltreGeneralActif.Clear()" />
+      <reference referencedUin="delphi:l_ast:src:CimMobile:uFilter.TFiltreGeneralActif.Types">
+        <property name="sourceAnchor" value="395,335" />
+        <property name="targetAnchor" value="395,169" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+  </view>
+</nodeSet>

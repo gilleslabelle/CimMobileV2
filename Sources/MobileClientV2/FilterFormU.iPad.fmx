@@ -1,0 +1,128 @@
+inherited FormFilter_iPad: TFormFilter_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 2
+  inherited TabControl1: TTabControl
+    Size.Width = 768.000000000000000000
+    Size.Height = 1004.000000000000000000
+    inherited tabFilter: TTabItem
+      Size.Width = 192.000000000000000000
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited lbFiltres: TListBox
+        Size.Width = 768.000000000000000000
+        Size.Height = 911.000000000000000000
+        Viewport.Width = 768.000000000000000000
+        Viewport.Height = 911.000000000000000000
+        inherited ListBoxGroupHeader2: TListBoxGroupHeader
+          Size.Width = 768.000000000000000000
+        end
+        inherited lbiFiltreAucun: TListBoxItem
+          Size.Width = 768.000000000000000000
+        end
+        inherited lbiFiltreVilles: TListBoxItem
+          Size.Width = 768.000000000000000000
+        end
+        inherited lbiFiltreRegions: TListBoxItem
+          Size.Width = 768.000000000000000000
+        end
+        inherited lbiFiltreMRCs: TListBoxItem
+          Size.Width = 768.000000000000000000
+        end
+        inherited ListBoxGroupHeader1: TListBoxGroupHeader
+          Size.Width = 768.000000000000000000
+        end
+        inherited lbiFiltreTypeCimArcheoHistoire: TListBoxItem
+          Size.Width = 768.000000000000000000
+          inherited SwitchFiltreTypeCimArcheoHistoire: TSwitch
+            Position.X = 703.000000000000000000
+          end
+        end
+        inherited lbiFiltreTypeCimCimetieres: TListBoxItem
+          Size.Width = 768.000000000000000000
+          inherited SwitchFiltreTypeCimCimetieres: TSwitch
+            Position.X = 703.000000000000000000
+          end
+        end
+        inherited lbiFiltreTypeCimColumbariums: TListBoxItem
+          Size.Width = 768.000000000000000000
+          inherited SwitchFiltreTypeCimColumbariums: TSwitch
+            Position.X = 703.000000000000000000
+          end
+        end
+        inherited lbiFiltreTypeCimCryptes: TListBoxItem
+          Size.Width = 768.000000000000000000
+          inherited SwitchFiltreTypeCimCryptes: TSwitch
+            Position.X = 703.000000000000000000
+          end
+        end
+        inherited lbiFiltreTypeCimDivers: TListBoxItem
+          Size.Width = 768.000000000000000000
+          inherited SwitchFiltreTypeCimDivers: TSwitch
+            Position.X = 703.000000000000000000
+          end
+        end
+      end
+      inherited tbFiltres: TToolBar
+        Size.Width = 768.000000000000000000
+        inherited Label7: TLabel
+          Size.Width = 768.000000000000000000
+        end
+      end
+    end
+    inherited tabVilles: TTabItem
+      Size.Width = 192.000000000000000000
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited ToolBar1: TToolBar
+        Size.Width = 768.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 768.000000000000000000
+        end
+        inherited SpeedButton1: TSpeedButton
+          Position.X = 724.000000000000000000
+        end
+      end
+      inherited lvVilles: TListView
+        Size.Width = 768.000000000000000000
+        Size.Height = 911.000000000000000000
+      end
+    end
+    inherited tabRegions: TTabItem
+      Size.Width = 192.000000000000000000
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited ToolBar2: TToolBar
+        Size.Width = 768.000000000000000000
+        inherited Label2: TLabel
+          Size.Width = 768.000000000000000000
+        end
+        inherited SpeedButton2: TSpeedButton
+          Position.X = 724.000000000000000000
+        end
+      end
+      inherited lvRegions: TListView
+        Size.Width = 768.000000000000000000
+        Size.Height = 911.000000000000000000
+      end
+    end
+    inherited tabMrcs: TTabItem
+      Size.Width = 192.000000000000000000
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited ToolBar3: TToolBar
+        Size.Width = 768.000000000000000000
+        inherited Label3: TLabel
+          Size.Width = 768.000000000000000000
+        end
+        inherited SpeedButton3: TSpeedButton
+          Position.X = 724.000000000000000000
+        end
+      end
+      inherited lvMRCs: TListView
+        Size.Width = 768.000000000000000000
+        Size.Height = 911.000000000000000000
+      end
+    end
+  end
+end

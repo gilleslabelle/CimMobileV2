@@ -1,0 +1,595 @@
+object formMain: TformMain
+  Left = 0
+  Top = 0
+  Caption = 'Form88'
+  ClientHeight = 548
+  ClientWidth = 320
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Orientations = [Portrait]
+  FormFactor.Devices = [iPhone]
+  FormFamily = 'laMainForm'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Touch.GestureManager = GestureManager1
+    Align = Client
+    FullSize = True
+    Size.Width = 320.000000000000000000
+    Size.Height = 548.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = Top
+    object tabListCims: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 107.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabListCims'
+      OnClick = tabListCimsClick
+      object tbListCimHeader: TToolBar
+        Size.Width = 320.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'ipadtoolbarright'
+        TabOrder = 0
+        object lblTitleCim: TLabel
+          Align = Contents
+          StyledSettings = [FontColor]
+          Margins.Left = 40.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 40.000000000000000000
+          Size.Width = 240.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.Font.Family = 'Gill Sans MT'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.HorzAlign = Center
+          TextSettings.VertAlign = Leading
+          Text = 'Liste de cimeti'#232'res'
+        end
+        object lblSousTitleCim: TLabel
+          Align = Contents
+          StyledSettings = [Style, FontColor]
+          Margins.Left = 40.000000000000000000
+          Margins.Right = 40.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Size.Width = 240.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxheaderlabel'
+          TextSettings.Font.Family = 'Gill Sans MT Condensed'
+          TextSettings.HorzAlign = Center
+          TextSettings.VertAlign = Trailing
+          Text = '(Ville : St-J'#233'rome)'
+        end
+        object cmdShowOptions: TSpeedButton
+          Align = Right
+          Margins.Right = 5.000000000000000000
+          Position.X = 271.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'detailstoolbuttonbordered'
+          Text = 'actOpenDrawer'
+          OnClick = actOpenDrawerExecute
+        end
+        object cmdMapAllCims: TSpeedButton
+          Align = Left
+          Size.Width = 56.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toolbutton'
+          Text = 'Carte'
+          OnClick = cmdMapAllCimsClick
+        end
+      end
+      object lvCimetieres: TListView
+        ItemAppearanceClassName = 'TCustomizeItemObjects'
+        ItemEditAppearanceClassName = 'TListItemRightDetailShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        OnUpdateObjects = lvCimetieresUpdateObjects
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 455.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ItemAppearance.ItemHeight = 55
+        ItemAppearanceObjects.ItemObjects.Text.Font.Family = 'Gill Sans MT'
+        ItemAppearanceObjects.ItemObjects.Text.Font.Size = 14.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Text.TextVertAlign = Leading
+        ItemAppearanceObjects.ItemObjects.Detail.Font.Size = 13.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Detail.TextVertAlign = Trailing
+        ItemAppearanceObjects.ItemObjects.Detail.Visible = True
+        ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.Y = -5.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Accessory.Visible = True
+        StyleLookup = 'lvCimetieresStyle1'
+        CanSwipeDelete = False
+        OnItemClick = lvCimetieresItemClick
+      end
+      object lbOptions: TListBox
+        Anchors = [akTop, akRight]
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 136.000000000000000000
+        Position.Y = 44.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 133.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Visible = False
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = Grouped
+        Viewport.Width = 157.000000000000000000
+        Viewport.Height = 129.000000000000000000
+        object lbiOptionFiltre: TListBoxItem
+          ItemData.Bitmap.PNG = {
+            89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+            F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            0285494441545847ED963DA8925118C71FBF70113F16D126C92D8740848B4383
+            C22D6BB1A90882E2423414A4AE4220444BE6670D4221BA08BA18044D49188819
+            8910E95481A00D92838469F9D1F39CF728D79BA66FC65DF207AFCFC779DFF3FE
+            CF791E8FC27F8F843EBC5EEF693435F28F83C964722A1A8D36C897B20CC00D6E
+            8F05A9547A9DBBC20E783C9E93685E4B249213146F834C2603BFDF0F2A958A67
+            0092C924341A6CC1309D4E3FE37BCE84C3E116C56C072291C8273467F1FA4AF1
+            36D86C36D06AB52097CBD955A954E62F47BE606E7FF67262560212F1613C1E9F
+            47B72764C4832B0387C3C1238076BB0DF97C9EF9C3E1B08BE65C3018FCC8129C
+            B90022168BBDC50671F77ABDEF3C250A8BC5027ABD9EF983C10052A9148C4623
+            0ABF29148A0BB8F2F76CF0100B0208ECCE571A8DE612BA3F85CCE6389D4E66B1
+            CE90CD66A1D3E950C70F70672EE2BC6FD8E0117E13408442A1E7F8E03574C742
+            663D66B3194C2613F34BA512D46A35E876BBB4FC2B38DF4B36B084A50208549C
+            41730BAF294BAC6156FB66B3C9EA5EAD56273A9DEE00E7119A6005326E97522E
+            97DFD9EDF63EBAFB426639068301DC6E37F4FB7D48241264A746A3F10E36F613
+            7ECB4A56EEC00C6C9C0768EE0BD17266ABCF6432B4EDE4DEC5E71EB1E41AD60A
+            2070323F9AC742B4086E3358AD5628140A50AFD7A9E91EE2FDF7F8F05AFE5882
+            C360395E6039E8C4A4DF8D392E970BF0FC60ABC7EE7F8A35BFCD873662A31DE0
+            4CD56AF501DA6742880F4BA5B0B7B707E9749A569E6BB55A37F9D0C688110081
+            4000CF95D165EA708A498052A98462B138C1B3E36A2E97DBF86B3B439400221E
+            8F0FB9BB008AFBC15D518816F0AFD909D809D809D809D809D84A00FDE3F5F97C
+            3CDAF13700FC0260DEE32024035B040000000049454E44AE426082}
+          Size.Width = 157.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Filtres'
+          OnClick = lbiOptionFiltreClick
+        end
+        object lbiOptionSort: TListBoxItem
+          ItemData.Bitmap.PNG = {
+            89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+            F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            0102494441545847ED96CD0DC3200C8521A374828ED35B2F9DA08374825E7AEB
+            389DA0ABA47244A200C6B2F123A73E294211FEF9C00611249D5FF799BEF43B44
+            318D95CAC49FEBA369CBE9747B67FEDFE785F59FD298895BF5A89DA800A44423
+            2032004D0234C40660098C8458007A02A220264F2004047B0A8E140BC09D79EB
+            3DA0550520251A0191016409225F1D34C496C5121809B100F40444414C9E4008
+            08BED007EA0FE006281F1E1691AF7F0762EC82587D6025B040EC6DA13DA08128
+            6DE04D2841707370001297A805E607989B0B56C90DD07AEF6B44BE9012F440AC
+            3EB01EB040EC6DA14DA881286DA0002409829B830390B8449ADD818BCEBE7431
+            8510C20FB749731D254F02420000000049454E44AE426082}
+          Position.Y = 44.000000000000000000
+          Size.Width = 157.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Tri'
+          OnClick = lbiOptionSortClick
+        end
+        object lbiOptionRefresh: TListBoxItem
+          ItemData.Bitmap.PNG = {
+            89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+            F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            04BC494441545847E5966B681C551480CF9D1977D3C4ADD1362A546AB045C8A2
+            3FC4886083DBDDB4456205539ADD0D115A90B6585050D01F36D9E924052DE203
+            EA0F933F45D236D9C4605148839A7DD4FAA8D8FE10890F545205DD52A37934C9
+            BE66AEE7CE9CDDCD3E926C1645C4EFC7EC39E7DED973E6DC7BCF3DF0BF87D16F
+            45EC7E4FAD4ECF80F2E00F705DD33483CC6B222F004F50E5219F563A280E6CC7
+            B0BA4D37782B63FCE145901AD601D498630B93697DDD1D3FCB5CB9C8198C25AA
+            16DEFDF4F157E6CCB155C83A13CE6116164307B46A3259A063F750C06FE846A7
+            2CCB4EB2AE8C0E7320C15BCC96383EBEE7E529B296C40CC0740ED37180DAAAA5
+            19F0045FDCC4413EC540DA4EA6B591846B70031C0CF9B5B3642942329F226274
+            6ECA847BA8EB7E9DF3CB259DE37C6E1817C08001CC503F80318ABF576834870D
+            EA741619C10F0C90A508F36B5D6F1E4EC8757536218B0C349FE9BC8FCBF238AA
+            370B5B166E84F0F9C6CCCCD5B14B87FA529631073A721AC00F48B3EC10AC07DC
+            223930C55AD8A71D25358BB50427F7A5A0BA5E11B208C075FAC8155951360B9D
+            F813FFE130A67290F415710F1CD9C224E56D14B7591682736FC8DF3D4C9A4951
+            004570F84D07D815F56B5F93A52C1E197DDA9E98AD3DC598B4974CB852F1695D
+            AE6A887AB51859AC3D109BACCF6EBC3CF054E073F75A9D0BC65A4E24364A5207
+            16878FC984DEAA6A250E79CB600650E78C940EC0014D98F6CBA4AD9961AF96B4
+            19E90E5898BF4E26984FC2FE9D23EAADA4D212A8AA014E4B5E99E2A35A0EEE60
+            E03803F602A9B815F833617FF709215BC7B00CE7B1093C7C1538174832EB2591
+            E02D245801E81059B18E8BF1DB9D2057E25C30BE57FB4907FD7B5281B1742389
+            E5A4FDEFC133A8BE86DE9E25153630B08B3D42EABF879981B6A136798A3BD3A6
+            C5841F0BF9BABB48F947C92E4153508D612DBE8DD41F71BDB792BC663CC1C093
+            3A44FB64D86E6DF242F0FA86747D6AC34D138EEC041B872F49146C7105D58A02
+            F004BB5A6313AC7759E7025175E9AEC84D62FC1C492632878324964DF3A0BA03
+            CBE7197162C8B422C36DC34676095CA7D58DB232FD4BE65AC61A3C6F33E09E68
+            BB36694EA81071AD332E2DCD6E96905793B219887668BF03AF3D49AAC84F8D04
+            467FDB906A5ED395D01CECBCD748CD9F27B518063C6F9D922CA9EA89C41FA402
+            93A4A6299DF78B9B8D4C65D33CA0DECDB9FCBEAC38F25BBC02F202B8E07BE99A
+            64B73F45AA85C4BCF1B95B3E6C7E47BD8B2CABE21E50F7A45389CFF00BEF2413
+            56D3D4AF9C19D90A98A9BE252BA13BA81EC50195540BBC9A8DF5BC57318CBE8F
+            DA8F7D43D62CAEB0AAC8316327E6F4396CE37033E6D061715662764FD8DB73C9
+            EA3FAD00A2BEA85C3200816730A0EA2C1A28799CB0FFC3EDFB15E37C0A65854B
+            6C93A44323EE7D07CDC8923460CA26410BD6952F849E0920D38117FF3981AD93
+            86EDBFD7EC6C0BC1D4E28B8F31C6F633893D81B2BB9473D18CE0796CCC38CF31
+            1DE70E303BA565031044FC3D23AC26D18021BFBAB4A9580D71F3710EFB225ECD
+            557C8CA7E30C6A5BC37E6D5468CB2E41210F9D7DDE618F57B762DA1FE59C3D70
+            F53BD89C29387A7A6E0194EA6F65903F31C01889787BCE8B2366BE58006ED05D
+            E176ED0352CB0FA0105555A58B5BE1C669DB6CEA73DFEBA277FC2F02F017B768
+            C567445B1BC10000000049454E44AE426082}
+          Position.Y = 88.000000000000000000
+          Size.Width = 157.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Rafra'#238'chir  '
+          OnClick = lbiOptionRefreshClick
+        end
+        object ShadowEffect1: TShadowEffect
+          Distance = 3.000000000000000000
+          Direction = 45.000000000000000000
+          Softness = 0.300000011920929000
+          Opacity = 0.600000023841857900
+          ShadowColor = claBlack
+        end
+      end
+    end
+    object tabCimDetails: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 107.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabCimDetails'
+      object ToolBar7: TToolBar
+        Align = MostTop
+        Size.Width = 320.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label7: TLabel
+          Align = Contents
+          StyledSettings = [FontColor]
+          Size.Width = 320.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.Font.Family = 'Gill Sans MT'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.HorzAlign = Center
+          Text = 'D'#233'tails cimeti'#232're'
+        end
+        object btnShowMap: TButton
+          Align = Right
+          Position.X = 264.000000000000000000
+          Size.Width = 56.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toolbutton'
+          TabOrder = 1
+          Text = 'Carte'
+          Visible = False
+          OnClick = btnShowMapClick
+        end
+        object SpeedButton3: TSpeedButton
+          Align = Left
+          Size.Width = 89.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          Text = 'Retour'
+          OnClick = SpeedButton3Click
+        end
+      end
+      object vsbCimDetails: TVertScrollBox
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 300.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Viewport.Width = 320.000000000000000000
+        Viewport.Height = 300.000000000000000000
+      end
+      object pnlCimCaption: TPanel
+        Align = MostTop
+        Position.Y = 44.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblCimCaption: TLabel
+          Align = Client
+          StyledSettings = [FontColor]
+          Margins.Left = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Size.Width = 310.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Gill Sans MT'
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.HorzAlign = Center
+          Text = 
+            ' Ancien cimeti'#232're (1er) de Pointe-aux-Trembles, Montr'#233'al, Co.Mon' +
+            'tr'#233'al, Qu'#233'bec'
+        end
+      end
+      object mapCim: TMapView
+        Align = Top
+        Position.Y = 94.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 105.000000000000000000
+        Size.PlatformDefault = False
+        Zoom = 12.000000000000000000
+        GestureOptions = [Zoom]
+        ControlOptions = [Compass]
+        OnMapDoubleClick = mapCimMapDoubleClick
+        object MapFloatAnimation: TFloatAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Height'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+    end
+    object tabCimImage: TTabItem
+      Touch.GestureManager = GestureManager1
+      OnGesture = tabCimImageGesture
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 104.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabCimImage'
+      object tbCimImage: TToolBar
+        Size.Width = 320.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object btnCloseCimImage: TSpeedButton
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          Text = 'Retour'
+          OnClick = btnCloseCimImageClick
+        end
+        object lblCimImageCaption: TLabel
+          Align = Contents
+          StyledSettings = [Size, FontColor]
+          Margins.Left = 70.000000000000000000
+          Size.Width = 250.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Gill Sans MT'
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.HorzAlign = Center
+          Text = 'Label2 ddddddd dddddd dddddd dd ddddd dddd'
+        end
+      end
+      object tbCimImageBottom: TToolBar
+        Align = Bottom
+        Position.Y = 455.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'bottomtoolbar'
+        TabOrder = 1
+        object lblCimImageDetail: TText
+          Align = Client
+          Size.Width = 226.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'dddd dddd ddd ddddddd dddd ddd dddd dddd dddd dd'
+          TextSettings.Font.Family = 'Gill Sans MT'
+        end
+        object btnCimImageNext: TSpeedButton
+          Align = Right
+          Margins.Right = 3.000000000000000000
+          Position.X = 273.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowrighttoolbutton'
+          Text = 'btnCimImageNext'
+          OnClick = btnCimImageNextClick
+        end
+        object btnCimImagePrevious: TSpeedButton
+          Align = Left
+          Margins.Left = 3.000000000000000000
+          Position.X = 3.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowlefttoolbutton'
+          Text = 'btnCimImageNext'
+          OnClick = btnCimImagePreviousClick
+        end
+      end
+    end
+  end
+  object StyleBook1: TStyleBook
+    Left = 160
+    Top = 223
+    ResourcesBin = {464D585F5354594C4520322E350100}
+  end
+  object ActionList1: TActionList
+    Left = 8
+    Top = 457
+    object ChangeTabAction1: TChangeTabAction
+      Category = 'Tab'
+      CustomText = ' '
+    end
+    object ChangeTabActionBackToSearch: TChangeTabAction
+      Category = 'Tab'
+      CustomText = ' '
+      Tab = tabListCims
+    end
+    object ChangeTabActionBackToCim: TChangeTabAction
+      Category = 'Tab'
+      CustomText = 'Retour'
+      Tab = tabListCims
+    end
+    object actStartList: TAction
+      Text = 'actStartList'
+      OnExecute = actStartListExecute
+    end
+    object ChangeTabActionBackToCimDetail: TChangeTabAction
+      Category = 'Tab'
+      CustomText = 'Retour'
+      Tab = tabCimDetails
+      Direction = Reversed
+    end
+    object ChangeTabActionToCimMap: TChangeTabAction
+      Category = 'Tab'
+    end
+    object actShowFilterDialog: TAction
+      Text = 'Filtre'
+      OnExecute = actShowFilterDialogExecute
+    end
+    object actOpenDrawer: TAction
+      Text = 'actOpenDrawer'
+      OnExecute = actOpenDrawerExecute
+      OnUpdate = actOpenDrawerUpdate
+    end
+    object actShowSortDialog: TAction
+      Text = 'Tri'
+      OnExecute = actShowSortDialogExecute
+    end
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 16
+    Top = 185
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dmMain.FDQuery1
+    ScopeMappings = <>
+    Left = 16
+    Top = 408
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 12
+    Top = 141
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Track = True
+      FillDataSource = AdapterBindSource1
+      FillDisplayFieldName = 'LoremIpsum1'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'LoremIpsum1'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField2: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = lvCimetieres
+      Track = True
+      FillDataSource = AdapterBindSource1
+      FillDisplayFieldName = 'LoremIpsum1'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'LoremIpsum1'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField3: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Track = True
+      FillDataSource = AdapterBindSource2
+      FillDisplayFieldName = 'BitmapName1'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'LoremIpsum1'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField4: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Track = True
+      FillDataSource = AdapterBindSource2
+      FillDisplayFieldName = 'LoremIpsum1'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'LoremIpsum1'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 16
+    Top = 232
+    GestureData = <
+      item
+        Control = TabControl1
+        Collection = <
+          item
+            GestureID = sgiRight
+          end>
+      end
+      item
+        Control = tabCimImage
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end>
+  end
+  object AdapterBindSource1: TAdapterBindSource
+    AutoActivate = True
+    ScopeMappings = <>
+    Left = 48
+    Top = 288
+  end
+  object AdapterBindSource2: TAdapterBindSource
+    AutoActivate = True
+    ScopeMappings = <>
+    Left = 24
+    Top = 352
+  end
+end

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="dcxxua0c1nn_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::cys6qyd7o7k_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,131,151" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:WaitFormUnit.TWaitForm" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:WaitFormUnit.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::q8r02qxktpt_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="160,1,100,134" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uCoord.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::so02jjba14o_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="160,154,107,183" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:SortForm.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:SortForm.TCimSortBy" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:SortForm.TFormSort" />
+    </reference>
+    <reference referencedUin="design:view:::ke730sy0vzn_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="286,1,160,213" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uFilter.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uFilter.TFormFilter" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uFilter.TFiltresCimActif" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uFilter.TFiltreGeneralActifTypes" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uFilter.TFiltreCimActif" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uFilter.TFiltreGeneralActif" />
+    </reference>
+    <reference referencedUin="design:view:::46d9wc732ek_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="51,180,100,151" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:mMain.TdmMain" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:mMain.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::j5gkchhy0on_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="484,1,146,151" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:cimDetailControl.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:cimDetailControl.TCimDetailCtl" />
+    </reference>
+    <reference referencedUin="design:view:::7x7la0lri0h_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="484,171,135,151" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:AnonThread.TAnonymousThread&lt;1&gt;" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:AnonThread.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::mp2zgfdrp0o_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="305,233,118,151" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uPictureCls.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uPictureCls.TCimImageCollection" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uPictureCls.TCimImage" />
+    </reference>
+    <reference referencedUin="design:view:::rx4jvbwje4n_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="484,341,136,134" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:mainformLogic.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:mainformLogic.TAfficheBigImage" />
+    </reference>
+    <reference referencedUin="design:view:::lfri2l6eupt_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="186,375,114,134" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:CimMobile.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::59mctb9m6mj_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="47,375,136,151" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:WelcomeForm.TFormWelcome" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:WelcomeForm.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::n46ssi2wl8h_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="668,1,141,151" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:MainformTablet.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:MainformTablet.TformMainTablet" />
+    </reference>
+    <reference referencedUin="design:view:::snltrtwd92iezfw1o_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="484,494,107,151" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:Mainform.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:Mainform.TformMain" />
+    </reference>
+    <reference referencedUin="design:view:::ptb4df3amyl_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="345,564,136,213" />
+      <reference referencedUin="design:view:::dh2tc1mvv7s_v" />
+      <reference referencedUin="design:view:::0v5uh4ezk0q_v" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:Geodesy.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:Geodesy.TEllipsoid" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:Geodesy.TGeodeticCalculator" />
+      <reference referencedUin="design:view:::qhmmmk5iodn_v" />
+    </reference>
+    <reference referencedUin="design:view:::xv2bqu6l57i_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="668,171,135,166" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uImageLoader.TLoadQueueItem" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uImageLoader.TLoadQueue" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uImageLoader.TImageLoader" />
+      <reference referencedUin="delphi:e_class:src:CimMobile:uImageLoader.@unitclass" />
+    </reference>
+  </view>
+</nodeSet>

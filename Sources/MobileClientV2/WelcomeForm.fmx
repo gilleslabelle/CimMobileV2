@@ -1,0 +1,67 @@
+object FormWelcome: TFormWelcome
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 764
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  FormFamily = 'LaWelcomeForm'
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lblTitle: TLabel
+    Align = MostTop
+    ControlType = Platform
+    Size.Width = 764.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'La Route des Cimeti'#232'res du Qu'#233'bec'
+  end
+  object Text1: TLabel
+    Align = Top
+    Margins.Left = 25.000000000000000000
+    Margins.Right = 25.000000000000000000
+    Position.X = 25.000000000000000000
+    Position.Y = 73.000000000000000000
+    Size.Width = 714.000000000000000000
+    Size.Height = 104.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 
+      'Cette banque de donn'#233'es contient un inventaire des cimeti'#232'res et' +
+      ' d'#39'autres lieux de s'#233'pulture du Qu'#233'bec, existants ou disparus. E' +
+      'lle permet le g'#233'o-positionnement de ces lieux d'#39'inhumation'
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 764.000000000000000000
+    Size.Height = 303.000000000000000000
+    Size.PlatformDefault = False
+    object GridLayout1: TGridLayout
+      Align = HorzCenter
+      ItemHeight = 64.000000000000000000
+      ItemWidth = 250.000000000000000000
+      Orientation = Vertical
+      Position.X = 257.000000000000000000
+      Size.Width = 250.000000000000000000
+      Size.Height = 303.000000000000000000
+      Size.PlatformDefault = False
+      object cmdStartModeBrowse: TButton
+        ControlType = Platform
+        Size.Width = 250.000000000000000000
+        Size.Height = 64.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'D'#233'marrer la recherche'
+        OnClick = cmdStartModeBrowseClick
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 576
+    Top = 344
+  end
+end

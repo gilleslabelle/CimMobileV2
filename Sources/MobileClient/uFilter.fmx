@@ -1,0 +1,524 @@
+object FormFilter: TFormFilter
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 541
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object TabControl1: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 320.000000000000000000
+    Size.Height = 541.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 3
+    TabOrder = 0
+    TabPosition = Top
+    object tabFilter: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabFilter'
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object lbFiltres: TListBox
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 6.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = Grouped
+        Viewport.Width = 45.000000000000000000
+        Viewport.Height = 6.000000000000000000
+        object ListBoxGroupHeader2: TListBoxGroupHeader
+          Size.Width = 45.000000000000000000
+          Size.Height = 56.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Filtre g'#233'n'#233'ral'
+        end
+        object lbiFiltreAucun: TListBoxItem
+          Position.Y = 56.000000000000000000
+          Size.Width = 45.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Aucun'
+          OnClick = lbiFiltreAucunClick
+        end
+        object lbiFiltreVilles: TListBoxItem
+          ItemData.Detail = 'St-J'#233'r'#244'me'
+          ItemData.Accessory = aCheckmark
+          Position.Y = 100.000000000000000000
+          Size.Width = 45.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 2
+          Text = 'Villes'
+          OnClick = lbiFiltreVillesClick
+        end
+        object lbiFiltreRegions: TListBoxItem
+          Position.Y = 144.000000000000000000
+          Size.Width = 45.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 3
+          Text = 'R'#233'gions'
+          OnClick = lbiFiltreRegionsClick
+        end
+        object lbiFiltreMRCs: TListBoxItem
+          Position.Y = 188.000000000000000000
+          Size.Width = 45.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 4
+          Text = 'MRC'
+          OnClick = lbiFiltreMRCsClick
+        end
+        object ListBoxGroupHeader1: TListBoxGroupHeader
+          Position.Y = 232.000000000000000000
+          Size.Width = 45.000000000000000000
+          Size.Height = 56.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = 'Type de cimeti'#232'res'
+        end
+        object lbiFiltreTypeCimArcheoHistoire: TListBoxItem
+          Position.Y = 288.000000000000000000
+          Size.Width = 45.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          Text = 'Arch'#233'o/Histoire'
+          object SwitchFiltreTypeCimArcheoHistoire: TSwitch
+            Align = MostRight
+            IsChecked = False
+            Margins.Right = 10.000000000000000000
+            Position.X = -20.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 55.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnSwitch = SwitchFiltreTypeCimArcheoHistoireSwitch
+          end
+        end
+        object lbiFiltreTypeCimCimetieres: TListBoxItem
+          Position.Y = 332.000000000000000000
+          Size.Width = 45.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Text = 'Cimeti'#232'res'
+          object SwitchFiltreTypeCimCimetieres: TSwitch
+            Align = MostRight
+            IsChecked = False
+            Margins.Right = 10.000000000000000000
+            Position.X = -20.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 55.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnSwitch = SwitchFiltreTypeCimArcheoHistoireSwitch
+          end
+        end
+        object lbiFiltreTypeCimColumbariums: TListBoxItem
+          Position.Y = 376.000000000000000000
+          Size.Width = 45.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          Text = 'Columbariums'
+          object SwitchFiltreTypeCimColumbariums: TSwitch
+            Align = MostRight
+            IsChecked = False
+            Margins.Right = 10.000000000000000000
+            Position.X = -20.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 55.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnSwitch = SwitchFiltreTypeCimArcheoHistoireSwitch
+          end
+        end
+        object lbiFiltreTypeCimCryptes: TListBoxItem
+          Position.Y = 420.000000000000000000
+          Size.Width = 45.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 9
+          Text = 'Cryptes'
+          object SwitchFiltreTypeCimCryptes: TSwitch
+            Align = MostRight
+            IsChecked = False
+            Margins.Right = 10.000000000000000000
+            Position.X = -20.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 55.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnSwitch = SwitchFiltreTypeCimArcheoHistoireSwitch
+          end
+        end
+        object lbiFiltreTypeCimDivers: TListBoxItem
+          Position.Y = 464.000000000000000000
+          Size.Width = 45.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 10
+          Text = 'Divers'
+          object SwitchFiltreTypeCimDivers: TSwitch
+            Align = MostRight
+            IsChecked = False
+            Margins.Right = 10.000000000000000000
+            Position.X = -20.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 55.000000000000000000
+            Size.Height = 35.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnSwitch = SwitchFiltreTypeCimArcheoHistoireSwitch
+          end
+        end
+      end
+      object tbFiltres: TToolBar
+        Size.Width = 50.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label7: TLabel
+          Align = Contents
+          Size.Width = 50.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Filtres'
+        end
+        object btnShowMap: TButton
+          Align = Left
+          ModalResult = 1
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 76.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          TabOrder = 1
+          Text = 'Retour'
+          OnClick = btnShowMapClick
+        end
+      end
+    end
+    object tabVilles: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabVilles'
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object ToolBar1: TToolBar
+        Size.Width = 50.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label1: TLabel
+          Align = Contents
+          Size.Width = 50.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Villes'
+        end
+        object btnVillesBack: TButton
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 76.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          TabOrder = 1
+          Text = 'Retour'
+          OnClick = btnVillesBackClick
+        end
+        object SpeedButton1: TSpeedButton
+          Align = Right
+          Position.X = 6.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'searchtoolbutton'
+          Text = 'SpeedButton1'
+          OnClick = SpeedButton1Click
+        end
+      end
+      object lvVilles: TListView
+        ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+        ItemEditAppearanceClassName = 'TListItemRightDetailShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 6.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+        ItemAppearanceObjects.ItemObjects.Detail.Font.Size = 9.000000000000000000
+        OnItemClick = lvVillesItemClick
+      end
+    end
+    object tabRegions: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabRegions'
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object ToolBar2: TToolBar
+        Size.Width = 50.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label2: TLabel
+          Align = Contents
+          Size.Width = 50.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'R'#233'gions'
+        end
+        object btnRegionsBack: TButton
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 76.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          TabOrder = 1
+          Text = 'Retour'
+          OnClick = btnRegionsBackClick
+        end
+        object SpeedButton2: TSpeedButton
+          Align = Right
+          Position.X = 6.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'searchtoolbutton'
+          Text = 'SpeedButton1'
+          OnClick = SpeedButton2Click
+        end
+      end
+      object lvRegions: TListView
+        ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+        ItemEditAppearanceClassName = 'TListItemRightDetailShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 6.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+        ItemAppearanceObjects.ItemObjects.Detail.Font.Size = 9.000000000000000000
+        OnItemClick = lvRegionsItemClick
+      end
+    end
+    object tabMrcs: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabMrcs'
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object ToolBar3: TToolBar
+        ControlType = Platform
+        Size.Width = 320.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label3: TLabel
+          Align = Contents
+          ControlType = Platform
+          Size.Width = 320.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'MRCs'
+        end
+        object btnMRCsBack: TButton
+          Align = Left
+          ControlType = Platform
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 76.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          TabOrder = 1
+          Text = 'Retour'
+          OnClick = btnMRCsBackClick
+        end
+        object SpeedButton3: TSpeedButton
+          Align = Right
+          ControlType = Platform
+          Position.X = 276.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'searchtoolbutton'
+          Text = 'SpeedButton1'
+          OnClick = SpeedButton3Click
+        end
+      end
+      object lvMRCs: TListView
+        ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+        ItemEditAppearanceClassName = 'TListItemRightDetailShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 448.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+        ItemAppearanceObjects.ItemObjects.Detail.Font.Size = 9.000000000000000000
+        OnItemClick = lvMRCsItemClick
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 224
+    Top = 255
+    object actGotoTabVilles: TChangeTabAction
+      Tab = tabVilles
+    end
+    object actGotoTabRegions: TChangeTabAction
+      Tab = tabRegions
+    end
+    object actGotoTabMRCs: TChangeTabAction
+      Tab = tabMrcs
+    end
+    object actCloseForm: TAction
+      Text = 'actCloseForm'
+      OnExecute = actCloseFormExecute
+    end
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 236
+    Top = 341
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'RegionNom'
+      Control = lvRegions
+      FillExpressions = <
+        item
+          SourceMemberName = 'Region_NbCim'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Ville'
+      Control = lvVilles
+      FillExpressions = <
+        item
+          SourceMemberName = 'Nb'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField3: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB3
+      FieldName = 'MRC_Nom'
+      Control = lvMRCs
+      FillExpressions = <
+        item
+          SourceMemberName = 'MRC_NbCim'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object BindSourceListRegions: TBindSourceDB
+    ScopeMappings = <>
+    Left = 80
+    Top = 472
+  end
+  object BindSourceQryListMRC: TBindSourceDB
+    ScopeMappings = <>
+    Left = 72
+    Top = 408
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = dmMain.qryListRegions
+    ScopeMappings = <>
+    Left = 168
+    Top = 344
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dmMain.qryListVilles
+    ScopeMappings = <>
+    Left = 88
+    Top = 256
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = dmMain.qryListMRC
+    ScopeMappings = <>
+    Left = 144
+    Top = 264
+  end
+end

@@ -1,0 +1,2535 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\GeodeticCurve\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win32\Debug\CimMobile.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>CimMobile.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Win32\Base\CimMobile.exe" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>CimMobile.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\CimMobile\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uFilter\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\WelcomeForm\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\AnonThread\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Mainform\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="CimMobile.todo" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>CimMobile.todo</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\cimDetailControl\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\Angle\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uPictureCls\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\MainformTablet\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uImageLoader\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\WaitFormUnit\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uCoord\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\GlobalCoordinates\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\mMain\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobileTest\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\mainformLogic\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Db\Cimetieres.db">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>Cimetieres.db</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobileTest\default.txaPackage" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txaPackage</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\SortForm\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice64'"/>
+    <ItemGroup Condition="'$(Platform)'=='OSX32'">
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>CimMobile.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice32'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_87x87.png</RemoteName>
+            <DeployClass>iPhone_AppIcon87</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uImageLoader\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile72x72.png</RemoteName>
+            <DeployClass>iPad_AppIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Mainform\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\CimMobile.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectiOSInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile1536x2008.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <DeployClass>iPad_Launch1536</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Release\CimMobile" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>CimMobile</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Release\ResourceRules.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>ResourceRules.plist</RemoteName>
+            <DeployClass>ProjectiOSDeviceResourceRules</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile60x60.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile60x60.png</RemoteName>
+            <DeployClass>iPhone_AppIcon60</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\Angle\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile640x1136.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobileTest\default.txaPackage" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txaPackage</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-667h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch750</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-667h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch750</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Base\CimMobile.info.plist" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectiOSDeviceInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile1024x748.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\GeodeticCurve\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uPictureCls\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
+            <DeployClass>iPhone_AppIcon180</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uCoord\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uFilter\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile1536x2008.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <DeployClass>iPad_Launch1536</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPad_SpotLight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobileTest\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Base\CimMobile.dSYM" Condition="'$(Config)'=='Base'">
+            <RemoteDir>$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>CimMobile</RemoteName>
+            <DeployClass>ProjectiOSDeviceDebug</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Base\CimMobile.entitlements" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile.app\../\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <DeployClass>ProjectiOSEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\mainformLogic\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\WelcomeForm\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch1242</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\cimDetailControl\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\cimDetailControl\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\WaitFormUnit\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile768x1004.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile640x960.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch2208</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch2048x1536</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uPictureCls\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_87x87.png</RemoteName>
+            <DeployClass>iPhone_AppIcon87</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\mMain\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile114x114.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile58x58.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile58x58.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
+            <DeployClass>iPhone_AppIcon180</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="CimMobile.todo" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>CimMobile.todo</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile60x60.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <DeployClass>iPhone_AppIcon60</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\SortForm\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uFilter\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile120x120.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobileTest\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\mainformLogic\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile29x29.png</RemoteName>
+            <DeployClass>iPad_Setting29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile50x50.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cemeteryvert.png">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cemeteryvert.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\SortForm\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch2208</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\CimMobile.dSYM" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>CimMobile</RemoteName>
+            <DeployClass>ProjectiOSDeviceDebug</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\WelcomeForm\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile57x57.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile57x57.png</RemoteName>
+            <DeployClass>iPhone_AppIcon57</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Base\ResourceRules.plist" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>ResourceRules.plist</RemoteName>
+            <DeployClass>ProjectiOSDeviceResourceRules</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\GeodeticCurve\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cemetery.png">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cemetery.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Release\CimMobile.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\../\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <DeployClass>ProjectiOSEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPad_SpotLight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile114x114.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile320x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <DeployClass>iPhone_Launch320</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile2048x1496.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2048</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Release\CimMobile.dSYM" Condition="'$(Config)'=='Release'">
+            <RemoteDir>$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>CimMobile</RemoteName>
+            <DeployClass>ProjectiOSDeviceDebug</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\Angle\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile640x1136.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\CimMobile\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\ResourceRules.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>ResourceRules.plist</RemoteName>
+            <DeployClass>ProjectiOSDeviceResourceRules</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile58x58.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile640x960.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\CimMobile" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>CimMobile</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile100x100.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile100x100.png</RemoteName>
+            <DeployClass>iPad_SpotLight100</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\AnonThread\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile80x80.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\mMain\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPhone_Spotlight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile100x100.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile100x100.png</RemoteName>
+            <DeployClass>iPad_SpotLight100</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile768x1004.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile152x152.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\WaitFormUnit\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uCoord\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\CimMobile\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\MainformTablet\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile72x72.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile72x72.png</RemoteName>
+            <DeployClass>iPad_AppIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Db\Cimetieres.db">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>Cimetieres.db</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Base\CimMobile" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>CimMobile</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\GlobalCoordinates\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\GlobalCoordinates\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile144x144.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile144x144.png</RemoteName>
+            <DeployClass>iPad_AppIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPad_SpotLight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile50x50.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\MainformTablet\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Release\CimMobile.info.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectiOSInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile29x29.png</RemoteName>
+            <DeployClass>iPad_Setting29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\AnonThread\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="CimMobile.todo" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>CimMobile.todo</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch2048x1536</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile57x57.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile57x57.png</RemoteName>
+            <DeployClass>iPhone_AppIcon57</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\CimMobile.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\../\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <DeployClass>ProjectiOSEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile40x40.png</RemoteName>
+            <DeployClass>iPhone_Spotlight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch1242</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile1024x748.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Mainform\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile144x144.png</RemoteName>
+            <DeployClass>iPad_AppIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobileTest\default.txaPackage" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txaPackage</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile120x120.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile320x480.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <DeployClass>iPhone_Launch320</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uImageLoader\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile2048x1496.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2048</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
+        <DeployFile Include="ModelSupport_CimMobileTest\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobileTest\default.txaPackage" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txaPackage</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile152x152.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile152x152.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile640x1136.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile57x57.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile57x57.png</RemoteName>
+            <DeployClass>iPhone_AppIcon57</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\SortForm\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile1024x768.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\Angle\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile144x144.png</RemoteName>
+            <DeployClass>iPad_AppIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\mMain\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Release\CimMobile" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>CimMobile</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\cimDetailControl\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch1242</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\mainformLogic\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\GlobalCoordinates\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uCoord\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile1024x768.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile320x480.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <DeployClass>iPhone_Launch320</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uPictureCls\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile50x50.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\CimMobile\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Base\CimMobile" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>CimMobile</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
+            <DeployClass>iPhone_AppIcon180</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
+            <DeployClass>iPhone_AppIcon180</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\MainformTablet\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile1536x2048.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\WaitFormUnit\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="CimMobile.todo" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>CimMobile.todo</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile1024x748.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uFilter\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile100x100.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile100x100.png</RemoteName>
+            <DeployClass>iPad_SpotLight100</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\mMain\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uImageLoader\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uPictureCls\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_87x87.png</RemoteName>
+            <DeployClass>iPhone_AppIcon87</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile2048x1536.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch2048x1536</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Base\CimMobile.entitlements" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <DeployClass>ProjectiOSEntitlements</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile40x40.png</RemoteName>
+            <DeployClass>iPad_SpotLight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\GeodeticCurve\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\mainformLogic\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile1536x2008.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <DeployClass>iPad_Launch1536</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile58x58.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile58x58.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch2208</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\CimMobile.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectiOSInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch2048x1536</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile120x120.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobileTest\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Db\Cimetieres.db">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>Cimetieres.db</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\cimDetailControl\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cemetery.png">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cemetery.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile1536x2008.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <DeployClass>iPad_Launch1536</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\AnonThread\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libPCRE.dylib">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>libPCRE.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\WelcomeForm\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="info.html">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>info.html</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile60x60.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile60x60.png</RemoteName>
+            <DeployClass>iPhone_AppIcon60</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile80x80.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile80x80.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Base\CimMobile.info.plist" Condition="'$(Config)'=='Base'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectiOSSimulatorInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\WaitFormUnit\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\SortForm\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile40x40.png</RemoteName>
+            <DeployClass>iPad_SpotLight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile2048x1536.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch2048x1536</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Mainform\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\iossim32\libcgunwind.1.0.dylib">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <DeployClass>DependencyModule</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\GeodeticCurve\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-667h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch750</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\MainformTablet\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\GlobalCoordinates\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uFilter\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile1024x748.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile768x1004.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile50x50.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile144x144.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile144x144.png</RemoteName>
+            <DeployClass>iPad_AppIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile114x114.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="CimMobile.todo" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>CimMobile.todo</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_87x87.png</RemoteName>
+            <DeployClass>iPhone_AppIcon87</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile60x60.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile60x60.png</RemoteName>
+            <DeployClass>iPhone_AppIcon60</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile1536x2048.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile768x1024.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile100x100.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile100x100.png</RemoteName>
+            <DeployClass>iPad_SpotLight100</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobileTest\default.txaPackage" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txaPackage</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-667h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch750</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile114x114.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile2048x1496.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2048</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile80x80.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile80x80.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\WelcomeForm\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Mainform\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\CimMobile\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile640x960.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile76x76.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uCoord\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile768x1004.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile320x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <DeployClass>iPhone_Launch320</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile29x29.png</RemoteName>
+            <DeployClass>iPad_Setting29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\uImageLoader\default.txvpck" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile72x72.png</RemoteName>
+            <DeployClass>iPad_AppIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile58x58.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch1242</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Db\Cimetieres.db">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Cimetieres.db</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\Geodesy\Angle\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile120x120.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="ModelSupport_CimMobile\AnonThread\default.txvpck" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>default.txvpck</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile57x57.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile57x57.png</RemoteName>
+            <DeployClass>iPhone_AppIcon57</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile768x1024.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile29x29.png</RemoteName>
+            <DeployClass>iPad_Setting29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\CimMobile.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <DeployClass>ProjectiOSEntitlements</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cemeteryvert.png">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cemeteryvert.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch2208</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile152x152.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile152x152.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile2048x1496.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2048</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile640x960.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile640x1136.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile72x72.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile72x72.png</RemoteName>
+            <DeployClass>iPad_AppIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\CimMobile" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>CimMobile</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Release\CimMobile.info.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectiOSInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Release\CimMobile.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>CimMobile.entitlements</RemoteName>
+            <DeployClass>ProjectiOSEntitlements</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="P:\Cimetieres\Images\cimmobile76x76.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+</Project>

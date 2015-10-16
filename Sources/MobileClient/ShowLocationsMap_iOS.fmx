@@ -1,0 +1,71 @@
+object FormShowLocationsMap: TFormShowLocationsMap
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'Form1'
+  ClientHeight = 614
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 614
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    Align = alClient
+    Width = 320.000000000000000000
+    Height = 614.000000000000000000
+    object DPFNavigationController1: TDPFNavigationController
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      Align = alClient
+      Width = 320.000000000000000000
+      Height = 614.000000000000000000
+      object DPFNavigationControllerPage1: TDPFNavigationControllerPage
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        Align = alClient
+        Width = 320.000000000000000000
+        Height = 526.000000000000000000
+        PageIndex = 0
+        BarButtons = <
+          item
+            OnClick = DPFNavigationControllerPage1BarButtons0Click
+            Enabled = True
+            ButtonType = bkRight
+          end>
+        ToolBarButtons = <>
+        PageViewTitle = 'Cimeti'#232'res '#224' proximit'#233
+        object DPFMapView1: TDPFMapView
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          Align = alClient
+          Width = 320.000000000000000000
+          Height = 526.000000000000000000
+          UserTrackingMode = utmFollow
+          ZoomLevel = 2.000000000000000000
+        end
+      end
+    end
+  end
+  object DPFApplicationManager1: TDPFApplicationManager
+    OnMemoryWarning = DPFApplicationManager1MemoryWarning
+    Left = 96
+    Top = 120
+  end
+end

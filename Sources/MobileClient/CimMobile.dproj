@@ -1,0 +1,2536 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A73AE673-9E8D-4B22-9A80-0DDCF5D671AE}</ProjectGuid>
+        <ProjectVersion>18.0</ProjectVersion>
+        <FrameworkType>FMX</FrameworkType>
+        <MainSource>CimMobile.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Release</Config>
+        <Platform Condition="'$(Platform)'==''">iOSDevice32</Platform>
+        <TargetedPlatforms>73</TargetedPlatforms>
+        <AppType>Application</AppType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSDevice32' and '$(Base)'=='true') or '$(Base_iOSDevice32)'!=''">
+        <Base_iOSDevice32>true</Base_iOSDevice32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSSimulator' and '$(Base)'=='true') or '$(Base_iOSSimulator)'!=''">
+        <Base_iOSSimulator>true</Base_iOSSimulator>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='OSX32' and '$(Base)'=='true') or '$(Base_OSX32)'!=''">
+        <Base_OSX32>true</Base_OSX32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSDevice32' and '$(Cfg_1)'=='true') or '$(Cfg_1_iOSDevice32)'!=''">
+        <Cfg_1_iOSDevice32>true</Cfg_1_iOSDevice32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSSimulator' and '$(Cfg_1)'=='true') or '$(Cfg_1_iOSSimulator)'!=''">
+        <Cfg_1_iOSSimulator>true</Cfg_1_iOSSimulator>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='qq' or '$(Cfg_3)'!=''">
+        <Cfg_3>true</Cfg_3>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSDevice32' and '$(Cfg_2)'=='true') or '$(Cfg_2_iOSDevice32)'!=''">
+        <Cfg_2_iOSDevice32>true</Cfg_2_iOSDevice32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
+        <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+        <SanitizedProjectName>CimMobile</SanitizedProjectName>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <AUP_ACCESS_FINE_LOCATION>true</AUP_ACCESS_FINE_LOCATION>
+        <AUP_READ_PHONE_STATE>true</AUP_READ_PHONE_STATE>
+        <AUP_INTERNET>true</AUP_INTERNET>
+        <AUP_CALL_PHONE>true</AUP_CALL_PHONE>
+        <AUP_WRITE_EXTERNAL_STORAGE>true</AUP_WRITE_EXTERNAL_STORAGE>
+        <AUP_ACCESS_COARSE_LOCATION>true</AUP_ACCESS_COARSE_LOCATION>
+        <AUP_READ_CALENDAR>true</AUP_READ_CALENDAR>
+        <AUP_READ_EXTERNAL_STORAGE>true</AUP_READ_EXTERNAL_STORAGE>
+        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
+        <AUP_WRITE_CALENDAR>true</AUP_WRITE_CALENDAR>
+        <AUP_CAMERA>true</AUP_CAMERA>
+        <DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
+        <DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
+        <DCC_E>false</DCC_E>
+        <DCC_N>false</DCC_N>
+        <DCC_S>false</DCC_S>
+        <DCC_F>false</DCC_F>
+        <DCC_K>false</DCC_K>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_iOSDevice32)'!=''">
+        <iPad_SpotLight50>P:\Cimetieres\Images\cimmobile50x50.png</iPad_SpotLight50>
+        <iPad_Launch1024>P:\Cimetieres\Images\cimmobile1024x748.png</iPad_Launch1024>
+        <iPad_AppIcon72>P:\Cimetieres\Images\cimmobile72x72.png</iPad_AppIcon72>
+        <iPhone_Spotlight29>P:\Cimetieres\Images\cimmobile29x29.png</iPhone_Spotlight29>
+        <iPhone_Launch640x1136>P:\Cimetieres\Images\cimmobile640x1136.png</iPhone_Launch640x1136>
+        <iPhone_AppIcon114>P:\Cimetieres\Images\cimmobile114x114.png</iPhone_AppIcon114>
+        <iPad_AppIcon144>P:\Cimetieres\Images\cimmobile144x144.png</iPad_AppIcon144>
+        <iPad_Launch2048>P:\Cimetieres\Images\cimmobile2048x1496.png</iPad_Launch2048>
+        <iPad_Launch768>P:\Cimetieres\Images\cimmobile768x1004.png</iPad_Launch768>
+        <iPad_Setting58>P:\Cimetieres\Images\cimmobile58x58.png</iPad_Setting58>
+        <iPhone_AppIcon57>P:\Cimetieres\Images\cimmobile57x57.png</iPhone_AppIcon57>
+        <iPad_Setting29>P:\Cimetieres\Images\cimmobile29x29.png</iPad_Setting29>
+        <iPhone_Spotlight58>P:\Cimetieres\Images\cimmobile58x58.png</iPhone_Spotlight58>
+        <iPhone_Launch640>P:\Cimetieres\Images\cimmobile640x960.png</iPhone_Launch640>
+        <iPhone_Launch320>P:\Cimetieres\Images\cimmobile320x480.png</iPhone_Launch320>
+        <iPad_SpotLight100>P:\Cimetieres\Images\cimmobile100x100.png</iPad_SpotLight100>
+        <iPad_Launch1536>P:\Cimetieres\Images\cimmobile1536x2008.png</iPad_Launch1536>
+        <iPad_Launch1536x2048>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png</iPad_Launch1536x2048>
+        <iPhone_Spotlight80>P:\Cimetieres\Images\cimmobile80x80.png</iPhone_Spotlight80>
+        <iPad_Launch2048x1536>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png</iPad_Launch2048x1536>
+        <VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
+        <iPhone_Launch750>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png</iPhone_Launch750>
+        <iPad_AppIcon152>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png</iPad_AppIcon152>
+        <iPhone_AppIcon120>P:\Cimetieres\Images\cimmobile120x120.png</iPhone_AppIcon120>
+        <iPad_Launch768x1024>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png</iPad_Launch768x1024>
+        <iPhone_AppIcon180>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png</iPhone_AppIcon180>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <iPad_AppIcon76>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png</iPad_AppIcon76>
+        <iPhone_Launch1242>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png</iPhone_Launch1242>
+        <iPad_Launch1024x768>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png</iPad_Launch1024x768>
+        <iPad_SpotLight40>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png</iPad_SpotLight40>
+        <iPhone_Launch2208>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png</iPhone_Launch2208>
+        <iPad_SpotLight80>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png</iPad_SpotLight80>
+        <BT_BuildType>Debug</BT_BuildType>
+        <iPhone_Spotlight40>P:\Cimetieres\Images\cimmobile40x40.png</iPhone_Spotlight40>
+        <iPhone_AppIcon60>P:\Cimetieres\Images\cimmobile60x60.png</iPhone_AppIcon60>
+        <iPhone_AppIcon87>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png</iPhone_AppIcon87>
+        <VerInfo_BundleId>$(MSBuildProjectName)</VerInfo_BundleId>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDevelopmentRegion=en;CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleInfoDictionaryVersion=7.1;CFBundleVersion=1.0.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);UIDeviceFamily=iPhone &amp; iPad;CFBundleResourceSpecification=ResourceRules.plist;NSLocationAlwaysUsageDescription=The reason for accessing the location information of the user;NSLocationWhenInUseUsageDescription=The reason for accessing the location information of the user;FMLocalNotificationPermission=false;UIBackgroundModes=</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_iOSSimulator)'!=''">
+        <iPhone_AppIcon87>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png</iPhone_AppIcon87>
+        <iPhone_Launch1242>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png</iPhone_Launch1242>
+        <iPhone_AppIcon180>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png</iPhone_AppIcon180>
+        <iPhone_Launch750>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png</iPhone_Launch750>
+        <iPhone_Launch2208>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png</iPhone_Launch2208>
+        <VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDevelopmentRegion=en;CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleInfoDictionaryVersion=6.0;CFBundleVersion=1.0.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);UIDeviceFamily=iPhone &amp; iPad;CFBundleResourceSpecification=ResourceRules.plist;NSLocationWhenInUseUsageDescription=The reason for accessing the location information of the user;NSLocationAlwaysUsageDescription=The reason for accessing the location information of the user;FMLocalNotificationPermission=false;UIBackgroundModes=</VerInfo_Keys>
+        <iPad_AppIcon152>P:\Cimetieres\Images\cimmobile152x152.png</iPad_AppIcon152>
+        <iPad_AppIcon76>P:\Cimetieres\Images\cimmobile76x76.png</iPad_AppIcon76>
+        <iPhone_AppIcon120>P:\Cimetieres\Images\cimmobile120x120.png</iPhone_AppIcon120>
+        <iPhone_AppIcon57>P:\Cimetieres\Images\cimmobile57x57.png</iPhone_AppIcon57>
+        <iPhone_AppIcon60>P:\Cimetieres\Images\cimmobile60x60.png</iPhone_AppIcon60>
+        <iPhone_Spotlight29>P:\Cimetieres\Images\cimmobile29x29.png</iPhone_Spotlight29>
+        <iPad_Setting29>P:\Cimetieres\Images\cimmobile29x29.png</iPad_Setting29>
+        <iPhone_Spotlight80>P:\Cimetieres\Images\cimmobile80x80.png</iPhone_Spotlight80>
+        <iPad_SpotLight80>P:\Cimetieres\Images\cimmobile80x80.png</iPad_SpotLight80>
+        <iPhone_Spotlight58>P:\Cimetieres\Images\cimmobile58x58.png</iPhone_Spotlight58>
+        <iPad_Setting58>P:\Cimetieres\Images\cimmobile58x58.png</iPad_Setting58>
+        <iPhone_Spotlight40>P:\Cimetieres\Images\cimmobile40x40.png</iPhone_Spotlight40>
+        <iPad_SpotLight40>P:\Cimetieres\Images\cimmobile40x40.png</iPad_SpotLight40>
+        <iPhone_AppIcon114>P:\Cimetieres\Images\cimmobile114x114.png</iPhone_AppIcon114>
+        <iPad_SpotLight100>P:\Cimetieres\Images\cimmobile100x100.png</iPad_SpotLight100>
+        <iPad_AppIcon144>P:\Cimetieres\Images\cimmobile144x144.png</iPad_AppIcon144>
+        <iPad_SpotLight50>P:\Cimetieres\Images\cimmobile50x50.png</iPad_SpotLight50>
+        <iPad_AppIcon72>P:\Cimetieres\Images\cimmobile72x72.png</iPad_AppIcon72>
+        <iPad_Launch2048>P:\Cimetieres\Images\cimmobile2048x1496.png</iPad_Launch2048>
+        <iPad_Launch1024>P:\Cimetieres\Images\cimmobile1024x748.png</iPad_Launch1024>
+        <iPad_Launch2048x1536>P:\Cimetieres\Images\cimmobile2048x1536.png</iPad_Launch2048x1536>
+        <iPad_Launch1024x768>P:\Cimetieres\Images\cimmobile1024x768.png</iPad_Launch1024x768>
+        <iPad_Launch1536>P:\Cimetieres\Images\cimmobile1536x2008.png</iPad_Launch1536>
+        <iPad_Launch768>P:\Cimetieres\Images\cimmobile768x1004.png</iPad_Launch768>
+        <iPad_Launch1536x2048>P:\Cimetieres\Images\cimmobile1536x2048.png</iPad_Launch1536x2048>
+        <iPad_Launch768x1024>P:\Cimetieres\Images\cimmobile768x1024.png</iPad_Launch768x1024>
+        <iPhone_Launch640>P:\Cimetieres\Images\cimmobile640x960.png</iPhone_Launch640>
+        <iPhone_Launch320>P:\Cimetieres\Images\cimmobile320x480.png</iPhone_Launch320>
+        <iPhone_Launch640x1136>P:\Cimetieres\Images\cimmobile640x1136.png</iPhone_Launch640x1136>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_OSX32)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleVersion=1.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true;LSApplicationCategoryType=public.app-category.utilities;NSLocationAlwaysUsageDescription=The reason for accessing the location information of the user;NSLocationWhenInUseUsageDescription=The reason for accessing the location information of the user</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <Icon_MainIcon>P:\Cimetieres\Images\HeadStone.ico</Icon_MainIcon>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_UsePackage>FireDACMSAccDriver;DataSnapIndy10ServerTransport;dxSkinLiquidSkyRS19;cxBarEditItemRS19;HQ.Lib.AnalyseProfil.Compo.Main.D19;FireDACPgDriver;dxWizardControlRS19;dxPScxCommonRS19;dxThemeRS19;frx19;cxGridRS19;dxPScxExtCommonRS19;DBXInterBaseDriver;DataSnapServer;DataSnapCommon;cxSchedulerRS19;TeeUI919;FMXTeeDB919;DbxCommonDriver;Zyma.Pkg.Database.D19;vclimg;dbxcds;dxFlowChartRS19;DatasnapConnectorsFreePascal;dxSkinSpringTimeRS19;dxdbtrRS19;vcldb;HQ.Lib.AnalyseProfil.Classes.D19;dxDockingRS19;FmxTeeUI919;dxdborRS19;cxSpreadSheetRS19;HQ.Lib.Encryption.D19;dxtrmdRS19;dxSpellCheckerRS19;dxSkinsdxDLPainterRS19;CustomIPTransport;vclZipForged19;TeeWorld919;dsnap;IndyIPServer;dxTileControlRS19;dxSkinFoggyRS19;IndyCore;dxPSCoreRS19;cxSchedulerGridRS19;cxPivotGridOLAPRS19;dxSkinStardustRS19;CloudService;TeePro919;FireDACIBDriver;dxSkinXmas2008BlueRS19;dxSkinValentineRS19;dxPScxSchedulerLnkRS19;frxe19;dxSkinDarkSideRS19;FireDACDb2Driver;HQ.Lib.Controles.D19;dxSkinLondonLiquidSkyRS19;dxBarExtDBItemsRS19;dxTabbedMDIRS19;frxDB19;dxSkinOffice2013WhiteRS19;FMXTeePro919;dxSkinSharpRS19;bindcompfmx;dxSkinBlueprintRS19;HQ.Lib.dxControles.D19;dxSkinOffice2007PinkRS19;vcldbx;cxExportRS19;FireDACODBCDriver;dxSkinCoffeeRS19;dbrtl;FireDACCommon;bindcomp;inetdb;dxSkinBlueRS19;dxServerModeRS19;DBXOdbcDriver;vclFireDAC;madDisAsm_;dxSkinMoneyTwinsRS19;FMXTee919;xmlrtl;dxSkiniMaginaryRS19;ibxpress;cxPivotGridChartRS19;OcelotX10Compos;dxSkinOffice2007GreenRS19;FireDACCommonDriver;vclactnband;bindengine;soaprtl;dxRibbonRS19;bindcompvcl;dxADOServerModeRS19;vclie;dxPSdxLCLnkRS19;madExcept_;dxSkinBlackRS19;HQ.Lib.CompareBatiment.D19;dxSkinOffice2010BlackRS19;fmxinfopower;dxSkinSevenClassicRS19;FireDACMSSQLDriver;DBXInformixDriver;Intraweb;dsnapcon;DBXFirebirdDriver;dxSkinscxSchedulerPainterRS19;inet;FMXTeeLanguage919;dxSkinsdxNavBarPainterRS19;dxPSdxFCLnkRS19;FireDACMySQLDriver;vclx;dxPSPrVwRibbonRS19;TeeDB919;DBXSybaseASADriver;RESTComponents;dxSkinLilianRS19;dxSkinscxPCPainterRS19;dbexpress;Zyma.Pkg.Base.D19;IndyIPClient;TeeMaker119;dxSkinSharpPlusRS19;cxSchedulerTreeBrowserRS19;dxPScxPivotGridLnkRS19;dxPScxSSLnkRS19;FireDACSqliteDriver;Zyma.Pkg.External.D19;DBXSqliteDriver;HQ.SkinsPrj.D19;dxSkinOffice2007BlueRS19;dxPSdxDBTVLnkRS19;cxDataRS19;cxLibraryRS19;fmx;HQ.Lib.CompareProfil.D19;HQ.Lib.Simulation.D19;IndySystem;dxPsPrVwAdvRS19;dxSkinHighContrastRS19;inetdbbde;vclib;DataSnapClient;Tee919;DataSnapProviderClient;DBXSybaseASEDriver;dxmdsRS19;dxSkinOffice2010SilverRS19;dxSkinsdxBarPainterRS19;TeeGL919;MetropolisUILiveTile;dxPSdxOCLnkRS19;vcldsnap;HQ.Lib.AnalyseProfil.Compo.D19;fmxFireDAC;DBXDb2Driver;dxSkinDevExpressDarkStyleRS19;DBXOracleDriver;HQ.Lib.General.D19;dxBarDBNavRS19;vclribbon;dxSkinSilverRS19;dxSkinVS2010RS19;fmxase;vcl;dxPSdxDBOCLnkRS19;IndyIPCommon;DBXMSSQLDriver;CodeSiteExpressPkg;cxTreeListdxBarPopupMenuRS19;dxBarRS19;DataSnapFireDAC;FireDACDBXDriver;HQ.Lib.Base.D19;dxFireDACServerModeRS19;inetdbxpress;webdsnap;cxEditorsRS19;dxSkinMcSkinRS19;adortl;dxSkinOffice2007SilverRS19;madBasic_;HQ.Lib.HoraireEdit.D19;FireDACASADriver;dxSkinSevenRS19;HQ.Lib.AnalyseProfil.Compo.ClassificationDesc.D19;TeeTree2D19Tee9;dxDBXServerModeRS19;dxLayoutControlRS19;HQ.Lib.Graphiques.D19;dxSkinWhiteprintRS19;cxPageControlRS19;DialogButtonsPackage;rtl;dcldxSkinsCoreRS19;DbxClientDriver;dxPScxGridLnkRS19;cxPageControldxBarPopupMenuRS19;cxVerticalGridRS19;svnui;dxSkinsdxRibbonPainterRS19;dxSkinSummer2008RS19;dxSkinTheAsphaltWorldRS19;dxComnRS19;IndyProtocols;DBXMySQLDriver;cxPivotGridRS19;dxPSLnksRS19;bindcompdbx;TeeLanguage919;dxSkinDarkRoomRS19;dxSkinPumpkinRS19;dxBarExtItemsRS19;FireDACADSDriver;vcltouch;dxNavBarRS19;DPFiOSPackagesXE5;Zyma.Pkg.Acomba.D19;VclSmp;FireDAC;VCLRESTComponents;dxGDIPlusRS19;DataSnapConnectors;FireDACDataSnapDriver;dxCoreRS19;dxPScxVGridLnkRS19;dxPScxTLLnkRS19;dxSkinsCoreRS19;fmxobj;dxSkinGlassOceansRS19;HQ.Lib.Archetypes.D19;dxPScxPCProdRS19;svn;dxSkinOffice2010BlueRS19;FireDACOracleDriver;fmxdae;dxorgcRS19;bdertl;TeeImage919;dxSkinOffice2007BlackRS19;dxSkinDevExpressStyleRS19;cxTreeListRS19;dxSkinCaramelRS19;$(DCC_UsePackage)</DCC_UsePackage>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <DCC_RemoteDebug>true</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_iOSDevice32)'!=''">
+        <DCC_DebugInfoInExe>false</DCC_DebugInfoInExe>
+        <iPad_Setting58>P:\Cimetieres\Images\cimmobile58x58.png</iPad_Setting58>
+        <iPad_Launch1536>P:\Cimetieres\Images\cimmobile1536x2008.png</iPad_Launch1536>
+        <DCC_iOSMinimumVersion>8.0</DCC_iOSMinimumVersion>
+        <iPhone_Launch320>P:\Cimetieres\Images\cimmobile320x480.png</iPhone_Launch320>
+        <iPhone_AppIcon57>P:\Cimetieres\Images\cimmobile57x57.png</iPhone_AppIcon57>
+        <iPhone_Spotlight58>P:\Cimetieres\Images\cimmobile58x58.png</iPhone_Spotlight58>
+        <iPad_Launch1024>P:\Cimetieres\Images\cimmobile1024x748.png</iPad_Launch1024>
+        <iPad_Setting29>P:\Cimetieres\Images\cimmobile29x29.png</iPad_Setting29>
+        <iPad_Launch2048>P:\Cimetieres\Images\cimmobile2048x1496.png</iPad_Launch2048>
+        <VerInfo_BundleId>$(MSBuildProjectName)</VerInfo_BundleId>
+        <iPhone_Launch640>P:\Cimetieres\Images\cimmobile640x960.png</iPhone_Launch640>
+        <VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
+        <iPad_SpotLight100>P:\Cimetieres\Images\cimmobile100x100.png</iPad_SpotLight100>
+        <iPad_SpotLight50>P:\Cimetieres\Images\cimmobile50x50.png</iPad_SpotLight50>
+        <iPhone_Spotlight29>P:\Cimetieres\Images\cimmobile29x29.png</iPhone_Spotlight29>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <iPad_AppIcon144>P:\Cimetieres\Images\cimmobile144x144.png</iPad_AppIcon144>
+        <iPhone_Launch640x1136>P:\Cimetieres\Images\cimmobile640x1136.png</iPhone_Launch640x1136>
+        <iPad_AppIcon72>P:\Cimetieres\Images\cimmobile72x72.png</iPad_AppIcon72>
+        <iPad_Launch768>P:\Cimetieres\Images\cimmobile768x1004.png</iPad_Launch768>
+        <iPhone_AppIcon114>P:\Cimetieres\Images\cimmobile114x114.png</iPhone_AppIcon114>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_iOSSimulator)'!=''">
+        <DCC_RangeChecking>true</DCC_RangeChecking>
+        <DCC_IntegerOverflowCheck>true</DCC_IntegerOverflowCheck>
+        <Debugger_DebugSourcePath>C:\DataGL\DelphiLib\DPF.iOS.Native.Components.v8.1.6\;$(Debugger_DebugSourcePath)</Debugger_DebugSourcePath>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <VerInfo_Build>431</VerInfo_Build>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDevelopmentRegion=en;CFBundleDisplayName=Test $(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleInfoDictionaryVersion=6.0;CFBundleVersion=1.0.431;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);UIDeviceFamily=iPhone &amp; iPad;CFBundleResourceSpecification=ResourceRules.plist;NSLocationWhenInUseUsageDescription=The reason for accessing the location information of the user;NSLocationAlwaysUsageDescription=The reason for accessing the location information of the user;FMLocalNotificationPermission=false;UIBackgroundModes=</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <DCC_UnitSearchPath>C:\DataGL\Projets\Cimetieres\Sources\Components\TPagedListBox;..\Components\TPagedListBox;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.117;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Build>117</VerInfo_Build>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_MapFile>3</DCC_MapFile>
+        <DCC_DebugInformation>true</DCC_DebugInformation>
+        <DCC_RemoteDebug>false</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_3)'!=''">
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <DCC_RemoteDebug>true</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_iOSDevice32)'!=''">
+        <VerInfo_Build>1</VerInfo_Build>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Icon_MainIcon>..\..\Images\HeadStone.ico</Icon_MainIcon>
+        <VerInfo_Build>51</VerInfo_Build>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.51;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="mMain.pas">
+            <Form>dmMain</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="uCoord.pas"/>
+        <DCCReference Include="..\GeodeticCalculator\Geodesy.pas"/>
+        <DCCReference Include="..\GeodeticCalculator\Geodesy.GlobalCoordinates.pas"/>
+        <DCCReference Include="..\GeodeticCalculator\Geodesy.Angle.pas"/>
+        <DCCReference Include="..\GeodeticCalculator\Geodesy.GeodeticCurve.pas"/>
+        <DCCReference Include="Mainform.pas">
+            <Form>formMain</Form>
+        </DCCReference>
+        <DCCReference Include="uFilter.pas">
+            <Form>FormFilter</Form>
+        </DCCReference>
+        <DCCReference Include="WaitFormUnit.pas">
+            <Form>WaitForm</Form>
+        </DCCReference>
+        <DCCReference Include="uImageLoader.pas"/>
+        <DCCReference Include="uPictureCls.pas">
+            <Form>/{$IFDEF IOS</Form>
+        </DCCReference>
+        <DCCReference Include="WelcomeForm.pas">
+            <Form>FormWelcome</Form>
+        </DCCReference>
+        <DCCReference Include="SortForm.pas">
+            <Form>FormSort</Form>
+        </DCCReference>
+        <DCCReference Include="cimDetailControl.pas"/>
+        <DCCReference Include="mainformLogic.pas"/>
+        <DCCReference Include="ShowCimLocations.pas">
+            <Form>ShowCimLocationsForm</Form>
+        </DCCReference>
+        <DCCReference Include="AsyncTask.HTTP.pas"/>
+        <DCCReference Include="AsyncTask.pas"/>
+        <None Include="CimMobile.todo"/>
+        <None Include="ModelSupport_CimMobileTest\default.txaPackage"/>
+        <None Include="ModelSupport_CimMobileTest\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\Mainform\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\mainformLogic\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\CimMobile\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\mMain\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\MainformTablet\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\WaitFormUnit\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\uCoord\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\SortForm\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\uFilter\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\cimDetailControl\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\AnonThread\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\uPictureCls\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\WelcomeForm\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\Geodesy\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\uImageLoader\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\Geodesy\GeodeticCurve\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\Geodesy\Angle\default.txvpck"/>
+        <None Include="ModelSupport_CimMobile\Geodesy\GlobalCoordinates\default.txvpck"/>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="qq">
+            <Key>Cfg_3</Key>
+            <CfgParent>Cfg_1</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">25</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">3084</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.25</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                    <VersionInfoKeys Name="CFBundleName"/>
+                    <VersionInfoKeys Name="CFBundleDisplayName"/>
+                    <VersionInfoKeys Name="UIDeviceFamily"/>
+                    <VersionInfoKeys Name="CFBundleIdentifier"/>
+                    <VersionInfoKeys Name="CFBundleVersion"/>
+                    <VersionInfoKeys Name="CFBundlePackageType"/>
+                    <VersionInfoKeys Name="CFBundleSignature"/>
+                    <VersionInfoKeys Name="CFBundleAllowMixedLocalizations"/>
+                    <VersionInfoKeys Name="UISupportedInterfaceOrientations"/>
+                    <VersionInfoKeys Name="CFBundleExecutable"/>
+                    <VersionInfoKeys Name="CFBundleResourceSpecification"/>
+                    <VersionInfoKeys Name="LSRequiresIPhoneOS"/>
+                    <VersionInfoKeys Name="CFBundleInfoDictionaryVersion"/>
+                    <VersionInfoKeys Name="CFBundleDevelopmentRegion"/>
+                    <VersionInfoKeys Name="package"/>
+                    <VersionInfoKeys Name="label"/>
+                    <VersionInfoKeys Name="versionCode"/>
+                    <VersionInfoKeys Name="versionName"/>
+                    <VersionInfoKeys Name="persistent"/>
+                    <VersionInfoKeys Name="restoreAnyVersion"/>
+                    <VersionInfoKeys Name="installLocation"/>
+                    <VersionInfoKeys Name="largeHeap"/>
+                    <VersionInfoKeys Name="theme"/>
+                </VersionInfoKeys>
+                <Source>
+                    <Source Name="MainSource">CimMobile.dpr</Source>
+                </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k230.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp230.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Deployment Version="2">
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Configuration="Debug" Class="iPhone_AppIcon87">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uImageLoader\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\GeodeticCurve\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobileTest\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile96x96.png" Configuration="Debug" Class="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteName>ic_launcher.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobileTest\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Mainform\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile152x152.png" Configuration="Release" Class="iPad_AppIcon152">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Debug\CimMobile.info.plist" Configuration="Debug" Class="ProjectiOSInfoPList">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-568h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile57x57.png" Configuration="Release" Class="iPhone_AppIcon57">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile1536x2008.png" Configuration="Release" Class="iPad_Launch1536">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Portrait@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Release\CimMobile" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>CimMobile</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win32\Debug\CimMobile.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>CimMobile.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\SortForm\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile1024x768.png" Configuration="Release" Class="iPad_Launch1024x768">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Release\ResourceRules.plist" Configuration="Release" Class="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>ResourceRules.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\Angle\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile144x144.png" Configuration="Debug" Class="iPad_AppIcon144">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\mMain\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Release\CimMobile" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>CimMobile</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\cimDetailControl\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Configuration="Release" Class="iPhone_Launch1242">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile60x60.png" Configuration="Release" Class="iPhone_AppIcon60">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cimmobile60x60.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win32\Base\CimMobile.exe" Configuration="Base" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\Angle\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\mainformLogic\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\GlobalCoordinates\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uCoord\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile320x480.png" Configuration="Release" Class="iPhone_Launch320">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-568h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uPictureCls\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile50x50.png" Configuration="Debug" Class="iPad_SpotLight50">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobileTest\default.txaPackage" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\CimMobile\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Configuration="Release" Class="iPhone_Launch750">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-667h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Configuration="Release" Class="iPad_AppIcon76">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cimmobile76x76.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Configuration="Debug" Class="iPhone_Launch750">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-667h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\CimMobile\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Base\CimMobile.info.plist" Configuration="Base" Class="ProjectiOSDeviceInfoPList">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Base\CimMobile" Configuration="Base" Class="ProjectOutput">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png" Configuration="Debug" Class="iPhone_AppIcon120">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Configuration="Debug" Class="iPhone_AppIcon180">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile1024x748.png" Configuration="Debug" Class="iPad_Launch1024">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Landscape.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Configuration="Release" Class="iPhone_AppIcon180">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\GeodeticCurve\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uPictureCls\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Configuration="Release" Class="iPhone_AppIcon180">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\MainformTablet\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uCoord\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uFilter\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile1536x2008.png" Configuration="Debug" Class="iPad_Launch1536">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Portrait@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile1536x2048.png" Configuration="Release" Class="iPad_Launch1536x2048">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPad_SpotLight40">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uFilter\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Configuration="Debug" Class="iPad_SpotLight80">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\WaitFormUnit\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Debug\libCimMobile.so" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Android">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\WelcomeForm\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\AnonThread\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobileTest\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Mainform\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Configuration="Base" Class="iPad_Launch1024x768">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Configuration="Base" Class="iPad_Launch1536x2048">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="CimMobile.todo" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Base\CimMobile.dSYM" Configuration="Base" Class="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>CimMobile</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Base\CimMobile.entitlements" Configuration="Base" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\mainformLogic\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="CimMobile.todo" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="All Platforms\Base\CimMobile" Configuration="Base" Class="ProjectOutput">
+                    <Platform Name="All Platforms">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile1024x748.png" Configuration="Debug" Class="iPad_Launch1024">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uFilter\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile100x100.png" Configuration="Debug" Class="iPad_SpotLight100">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\mMain\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\WelcomeForm\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uImageLoader\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uPictureCls\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Configuration="Release" Class="iPhone_AppIcon87">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Configuration="Release" Class="iPhone_Launch1242">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\cimDetailControl\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\cimDetailControl\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Configuration="Release" Class="iPad_Launch1024x768">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile2048x1536.png" Configuration="Debug" Class="iPad_Launch2048x1536">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Base\CimMobile.entitlements" Configuration="Base" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile40x40.png" Configuration="Release" Class="iPad_SpotLight40">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\GeodeticCurve\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\mainformLogic\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile1536x2008.png" Configuration="Release" Class="iPad_Launch1536">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile58x58.png" Configuration="Release" Class="iPad_Setting58">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\WaitFormUnit\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile768x1004.png" Configuration="Debug" Class="iPad_Launch768">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Debug\AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile640x960.png" Configuration="Debug" Class="iPhone_Launch640">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Configuration="Release" Class="iPhone_Launch2208">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Configuration="Release" Class="iPhone_Launch2208">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Debug\CimMobile.info.plist" Configuration="Debug" Class="ProjectiOSInfoPList">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Configuration="Debug" Class="iPad_Launch2048x1536">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uPictureCls\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\cimDetailControl\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Configuration="Debug" Class="iPad_Launch2048x1536">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Configuration="Release" Class="iPhone_AppIcon87">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\mMain\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile120x120.png" Configuration="Release" Class="iPhone_AppIcon120">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobileTest\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Db\Cimetieres.db" Class="File">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>Cimetieres.db</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile114x114.png" Configuration="Debug" Class="iPhone_AppIcon114">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile36x36.png" Configuration="Debug" Class="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteName>ic_launcher.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\cimDetailControl\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cemetery.png" Class="File">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>.\</RemoteDir>
+                        <RemoteName>cemetery.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile1536x2008.png" Configuration="Debug" Class="iPad_Launch1536">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile58x58.png" Configuration="Release" Class="iPad_Setting58">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cimmobile58x58.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Configuration="Debug" Class="iPhone_AppIcon180">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="CimMobile.todo" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\AnonThread\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="c:\program files (x86)\embarcadero\rad studio\12.0\lib\android\release\classes.dex" Configuration="Base" Class="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteName>classes.dex</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\Redist\iossimulator\libPCRE.dylib" Class="DependencyModule">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\SortForm\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\WelcomeForm\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uFilter\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="info.html" Class="File">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>info.html</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile60x60.png" Configuration="Release" Class="iPhone_AppIcon60">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile48x48.png" Configuration="Debug" Class="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteName>ic_launcher.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile120x120.png" Configuration="Release" Class="iPhone_AppIcon120">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cimmobile120x120.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobileTest\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile80x80.png" Configuration="Debug" Class="iPad_SpotLight80">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\mainformLogic\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile29x29.png" Configuration="Debug" Class="iPad_Setting29">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Base\CimMobile.info.plist" Configuration="Base" Class="ProjectiOSSimulatorInfoPList">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile50x50.png" Configuration="Release" Class="iPad_SpotLight50">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cimmobile50x50.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\WaitFormUnit\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\SortForm\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cemeteryvert.png" Class="File">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cemeteryvert.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\SortForm\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile40x40.png" Configuration="Debug" Class="iPad_SpotLight40">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Debug\CimMobile.dSYM" Configuration="Debug" Class="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>CimMobile</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\WelcomeForm\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\Angle\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile2048x1536.png" Configuration="Release" Class="iPad_Launch2048x1536">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile57x57.png" Configuration="Debug" Class="iPhone_AppIcon57">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Mainform\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uPictureCls\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\Redist\iossim32\libcgunwind.1.0.dylib" Class="DependencyModule">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\GeodeticCurve\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Base\ResourceRules.plist" Configuration="Base" Class="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>ResourceRules.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Configuration="Debug" Class="iPhone_Launch750">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-667h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\MainformTablet\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\GlobalCoordinates\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uFilter\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile1024x748.png" Configuration="Release" Class="iPad_Launch1024">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile768x1004.png" Configuration="Debug" Class="iPad_Launch768">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\GeodeticCurve\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile50x50.png" Configuration="Release" Class="iPad_SpotLight50">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile144x144.png" Configuration="Release" Class="iPad_AppIcon144">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile114x114.png" Configuration="Debug" Class="iPhone_AppIcon114">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="CimMobile.todo" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\MainformTablet\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cemetery.png" Class="File">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cemetery.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Release\CimMobile.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Configuration="Debug" Class="iPhone_AppIcon87">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Configuration="Release" Class="iPad_SpotLight40">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile114x114.png" Configuration="Release" Class="iPhone_AppIcon114">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cimmobile114x114.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile320x480.png" Configuration="Debug" Class="iPhone_Launch320">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Configuration="Debug" Class="iPad_AppIcon152">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile768x1024.png" Configuration="Release" Class="iPad_Launch768x1024">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile2048x1496.png" Configuration="Debug" Class="iPad_Launch2048">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Landscape@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile100x100.png" Configuration="Release" Class="iPad_SpotLight100">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobileTest\default.txaPackage" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Release\CimMobile.dSYM" Configuration="Release" Class="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>CimMobile</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Configuration="Release" Class="iPhone_Launch750">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-667h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\Angle\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uImageLoader\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile114x114.png" Configuration="Release" Class="iPhone_AppIcon114">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile2048x1496.png" Configuration="Release" Class="iPad_Launch2048">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile80x80.png" Configuration="Release" Class="iPad_SpotLight80">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-568h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\CimMobile\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\WelcomeForm\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Mainform\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Debug\ResourceRules.plist" Configuration="Debug" Class="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>ResourceRules.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile58x58.png" Configuration="Debug" Class="iPad_Setting58">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\CimMobile\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile144x144.png" Configuration="Debug" Class="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteName>ic_launcher.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile640x960.png" Configuration="Release" Class="iPhone_Launch640">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\WaitFormUnit\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Configuration="Base" Class="iPad_AppIcon76">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile640x960.png" Configuration="Debug" Class="iPhone_Launch640">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Debug\CimMobile" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>CimMobile</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile100x100.png" Configuration="Debug" Class="iPad_SpotLight100">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uCoord\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uCoord\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\AnonThread\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Base\libCimMobile.so" Configuration="Base" Class="ProjectOutput">
+                    <Platform Name="Android">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile72x72.png" Configuration="Debug" Class="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteName>ic_launcher.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Configuration="Release" Class="iPad_SpotLight80">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cimmobile80x80.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile768x1004.png" Configuration="Release" Class="iPad_Launch768">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile320x480.png" Configuration="Debug" Class="iPhone_Launch320">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\GlobalCoordinates\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile29x29.png" Configuration="Debug" Class="iPad_Setting29">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uImageLoader\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\mMain\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile40x40.png" Configuration="Debug" Class="iPhone_Spotlight40">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile100x100.png" Configuration="Release" Class="iPad_SpotLight100">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cimmobile100x100.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile768x1004.png" Configuration="Release" Class="iPad_Launch768">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\mMain\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Configuration="Release" Class="iPad_AppIcon152">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cimmobile152x152.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobileTest\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Configuration="Release" Class="iPad_Launch768x1024">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile58x58.png" Configuration="Debug" Class="iPad_Setting58">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="C:\Users\Public\Documents\RAD Studio\12.0\PlatformSDKs\android-ndk-r8e\prebuilt\android-arm\gdbserver\gdbserver" Configuration="Debug" Class="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Configuration="Debug" Class="iPhone_Launch1242">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="c:\program files (x86)\embarcadero\rad studio\12.0\lib\android\debug\classes.dex" Configuration="Debug" Class="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteName>classes.dex</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\mainformLogic\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\WaitFormUnit\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uCoord\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\CimMobile\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\MainformTablet\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile72x72.png" Configuration="Release" Class="iPad_AppIcon72">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cimmobile72x72.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Db\Cimetieres.db" Class="File">
+                    <Platform Name="Win32">
+                        <RemoteName>Cimetieres.db</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="Android">
+                        <RemoteDir>assets\internal\</RemoteDir>
+                        <RemoteName>Cimetieres.db</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>Cimetieres.db</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Cimetieres.db</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Base\AndroidManifest.xml" Configuration="Base" Class="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Base\CimMobile" Configuration="Base" Class="ProjectOutput">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>CimMobile</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\GlobalCoordinates\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\GlobalCoordinates\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile144x144.png" Configuration="Release" Class="iPad_AppIcon144">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cimmobile144x144.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Configuration="Base" Class="iPad_SpotLight40">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile50x50.png" Configuration="Debug" Class="iPad_SpotLight50">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\MainformTablet\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Release\CimMobile.info.plist" Configuration="Release" Class="ProjectiOSInfoPList">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile29x29.png" Configuration="Release" Class="iPad_Setting29">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\AnonThread\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Geodesy\Angle\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="CimMobile.todo" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobileTest\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Configuration="Release" Class="iPad_Launch2048x1536">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile57x57.png" Configuration="Release" Class="iPhone_AppIcon57">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>cimmobile57x57.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Debug\CimMobile.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile120x120.png" Configuration="Debug" Class="iPhone_AppIcon120">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\AnonThread\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile40x40.png" Configuration="Release" Class="iPhone_Spotlight40">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Configuration="Debug" Class="iPhone_Launch1242">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile57x57.png" Configuration="Debug" Class="iPhone_AppIcon57">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile29x29.png" Configuration="Release" Class="iPad_Setting29">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Debug\CimMobile.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile1024x748.png" Configuration="Release" Class="iPad_Launch1024">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Landscape.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cemeteryvert.png" Class="File">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>.\</RemoteDir>
+                        <RemoteName>cemeteryvert.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile152x152.png" Configuration="Debug" Class="iPad_AppIcon152">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile2048x1496.png" Configuration="Debug" Class="iPad_Launch2048">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\Mainform\default.txvpck" Configuration="Release" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Configuration="Base" Class="iPad_Launch768x1024">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile640x960.png" Configuration="Release" Class="iPhone_Launch640">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-568h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile72x72.png" Configuration="Release" Class="iPad_AppIcon72">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile144x144.png" Configuration="Debug" Class="iPad_AppIcon144">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobileTest\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Debug\CimMobile" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>CimMobile</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\SortForm\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Release\CimMobile.info.plist" Configuration="Release" Class="ProjectiOSInfoPList">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile120x120.png" Configuration="Debug" Class="iPhone_AppIcon120">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile320x480.png" Configuration="Release" Class="iPhone_Launch320">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_CimMobile\uImageLoader\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Configuration="Release" Class="iPad_Launch1536x2048">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Release\CimMobile.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile2048x1496.png" Configuration="Release" Class="iPad_Launch2048">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Landscape@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="P:\Cimetieres\Images\cimmobile76x76.png" Configuration="Release" Class="iPad_AppIcon76">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployClass Name="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AdditionalDebugSymbols">
+                    <Platform Name="Win32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch768">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="ProjectOutput">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyFramework">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeX86File">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\x86</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1024">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSSimulatorInfoPList">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch320">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSInfoPList">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DebugSymbols">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1536">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage470">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage640">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640x1136">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>../</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>../</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXInfoPList">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXEntitlements">
+                    <Platform Name="OSX32">
+                        <RemoteDir>../</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch2048">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceInfoPList">
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage426">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashImageDef">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSResource">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_DefaultAppIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="File">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources\StartUp\</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Android">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidServiceOutput">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="DependencyPackage">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage960">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice64">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+            </Deployment>
+            <Platforms>
+                <Platform value="iOSDevice32">True</Platform>
+                <Platform value="iOSSimulator">True</Platform>
+                <Platform value="OSX32">False</Platform>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+            <ModelSupport>True</ModelSupport>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+</Project>

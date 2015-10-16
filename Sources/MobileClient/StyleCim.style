@@ -1,0 +1,159 @@
+object TStyleContainer
+  object TLayout
+    StyleName = 'CimDetailCtlStyle'
+    Height = 16.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 188.000000000000000000
+    Position.Y = 286.000000000000000000
+    Width = 712.000000000000000000
+    object TText
+      StyleName = 'ledetail'
+      Align = alClient
+      Color = claMidnightblue
+      Font.Size = 12.000000000000000000
+      Height = 16.000000000000000000
+      HorzTextAlign = taLeading
+      Margins.Left = 5.000000000000000000
+      Text = 'le chien de laine'
+      Trimming = ttCharacter
+      Width = 625.000000000000000000
+    end
+    object TText
+      StyleName = 'caption'
+      Align = alLeft
+      Color = claDarkslategray
+      Font.Family = 'Gill Sans MT'
+      Font.Size = 12.000000000000000000
+      Height = 16.000000000000000000
+      HorzTextAlign = taLeading
+      Text = 'le caption'
+      Trimming = ttCharacter
+      Width = 82.000000000000000000
+      WordWrap = False
+    end
+  end
+  object TLayout
+    StyleName = 'cimListBoxItem'
+    DesignVisible = False
+    Height = 116.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 3.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    Position.X = 372.000000000000000000
+    Position.Y = 236.000000000000000000
+    Width = 344.000000000000000000
+    object TText
+      StyleName = 'text'
+      Align = alTop
+      Color = claBlack
+      Height = 30.000000000000000000
+      HorzTextAlign = taLeading
+      Text = 'Nom du cimetiere'
+      Width = 344.000000000000000000
+    end
+    object TLayout
+      StyleName = 'autre1'
+      Align = alTop
+      Height = 25.000000000000000000
+      Position.Y = 105.000000000000000000
+      Width = 344.000000000000000000
+      object TText
+        StyleName = 'autre1title'
+        Align = alLeft
+        Color = claBlack
+        Height = 25.000000000000000000
+        Text = 'Titre 1'
+        Width = 50.000000000000000000
+      end
+      object TText
+        StyleName = 'autre1caption'
+        Align = alClient
+        Color = claBlack
+        Height = 25.000000000000000000
+        HorzTextAlign = taLeading
+        Margins.Left = 5.000000000000000000
+        Text = 'D'#233'tails autre 1'
+        Width = 289.000000000000000000
+      end
+    end
+    object TLayout
+      StyleName = 'autre2'
+      Align = alTop
+      Height = 25.000000000000000000
+      Position.Y = 80.000000000000000000
+      Width = 344.000000000000000000
+      object TText
+        StyleName = 'autre2title'
+        Align = alLeft
+        Color = claBlack
+        Height = 25.000000000000000000
+        Text = 'Titre 2'
+        Width = 50.000000000000000000
+      end
+      object TText
+        StyleName = 'autre2caption'
+        Align = alClient
+        Color = claBlack
+        Height = 25.000000000000000000
+        HorzTextAlign = taLeading
+        Margins.Left = 5.000000000000000000
+        Text = 'D'#233'tails autre 2'
+        Width = 289.000000000000000000
+      end
+    end
+    object TLayout
+      StyleName = 'autre3'
+      Align = alTop
+      Height = 25.000000000000000000
+      Position.Y = 55.000000000000000000
+      Width = 344.000000000000000000
+      object TText
+        StyleName = 'autre3title'
+        Align = alLeft
+        Color = claBlack
+        Height = 25.000000000000000000
+        Text = 'Titre 3'
+        Width = 50.000000000000000000
+      end
+      object TText
+        StyleName = 'autre3caption'
+        Align = alClient
+        Color = claBlack
+        Height = 25.000000000000000000
+        HorzTextAlign = taLeading
+        Margins.Left = 5.000000000000000000
+        Text = 'D'#233'tails autre 3'
+        Width = 289.000000000000000000
+      end
+    end
+    object TLayout
+      StyleName = 'autre4'
+      Align = alTop
+      Height = 25.000000000000000000
+      Position.Y = 30.000000000000000000
+      Width = 344.000000000000000000
+      object TText
+        StyleName = 'autre4title'
+        Align = alLeft
+        Color = claBlack
+        Height = 25.000000000000000000
+        Text = 'Titre 4'
+        Width = 50.000000000000000000
+      end
+      object TText
+        StyleName = 'autre4caption'
+        Align = alClient
+        Color = claBlack
+        Height = 25.000000000000000000
+        HorzTextAlign = taLeading
+        Margins.Left = 5.000000000000000000
+        Text = 'D'#233'tails autre 4'
+        Width = 289.000000000000000000
+      end
+    end
+  end
+end

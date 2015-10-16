@@ -1,0 +1,59 @@
+inherited MainForm_Windows: TMainForm_Windows
+  DesignerMasterStyle = 0
+  inherited TabControl1: TTabControl
+    inherited tabListCims: TTabItem
+      ExplicitSize.cx = 212.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited Layout1: TLayout
+        inherited TabControl2: TTabControl
+          TabIndex = -1
+          TabPosition = None
+          inherited TabCimList: TTabItem
+            Size.Width = 8.000000000000000000
+            Size.Height = 8.000000000000000000
+            ExplicitSize.cx = 78.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited lvCimetieres: TListView
+              ItemAppearance.ItemHeight = 40
+            end
+          end
+          inherited tabCimMap: TTabItem
+            IsSelected = False
+            Visible = False
+            ExplicitSize.cx = 82.000000000000000000
+            ExplicitSize.cy = 26.000000000000000000
+            inherited MapView1: TMapView
+              Size.Width = 50.000000000000000000
+              Size.Height = 50.000000000000000000
+            end
+          end
+        end
+      end
+      inherited MultiView1: TMultiView
+        inherited lbOptions: TListBox
+          Viewport.Width = 208.000000000000000000
+          Viewport.Height = 454.000000000000000000
+          inherited ListBoxGroupHeader2: TListBoxGroupHeader
+            Visible = False
+          end
+          inherited lbiAfficheList: TListBoxItem
+            Position.Y = 280.000000000000000000
+            Visible = False
+          end
+          inherited lbiAfficheCarte: TListBoxItem
+            Position.Y = 280.000000000000000000
+            Visible = False
+          end
+        end
+      end
+    end
+    inherited tabCimDetails: TTabItem
+      ExplicitSize.cx = 212.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+    inherited tabCimImage: TTabItem
+      ExplicitSize.cx = 214.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+  end
+end

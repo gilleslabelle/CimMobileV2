@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="itk40lt4pqk_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:GeodesyLib:Geodesy.TEllipsoid">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,191,552" />
+      <reference referencedUin="delphi:e_field:src:GeodesyLib:Geodesy.TEllipsoid.mSemiMajorAxis" />
+      <reference referencedUin="delphi:e_field:src:GeodesyLib:Geodesy.TEllipsoid.mSemiMinorAxis" />
+      <reference referencedUin="delphi:e_field:src:GeodesyLib:Geodesy.TEllipsoid.mFlattening" />
+      <reference referencedUin="delphi:e_field:src:GeodesyLib:Geodesy.TEllipsoid.mInverseFlattening" />
+      <reference referencedUin="delphi:e_method:src:GeodesyLib:Geodesy.TEllipsoid.Create(System.Double,System.Double,System.Double,System.Double)" />
+      <reference referencedUin="delphi:e_field:src:GeodesyLib:Geodesy.TEllipsoid.FFlattening" />
+      <reference referencedUin="delphi:e_field:src:GeodesyLib:Geodesy.TEllipsoid.FInverseFlattening" />
+      <reference referencedUin="delphi:e_field:src:GeodesyLib:Geodesy.TEllipsoid.FSemiMajorAxis" />
+      <reference referencedUin="delphi:e_field:src:GeodesyLib:Geodesy.TEllipsoid.FSemiMinorAxis" />
+      <reference referencedUin="delphi:e_method:src:GeodesyLib:Geodesy.TEllipsoid.GetANS()" />
+      <reference referencedUin="delphi:e_method:src:GeodesyLib:Geodesy.TEllipsoid.GetClarke1858()" />
+      <reference referencedUin="delphi:e_method:src:GeodesyLib:Geodesy.TEllipsoid.GetClarke1880()" />
+      <reference referencedUin="delphi:e_method:src:GeodesyLib:Geodesy.TEllipsoid.GetGRS67()" />
+      <reference referencedUin="delphi:e_method:src:GeodesyLib:Geodesy.TEllipsoid.GetGRS80()" />
+      <reference referencedUin="delphi:e_method:src:GeodesyLib:Geodesy.TEllipsoid.GetSphere()" />
+      <reference referencedUin="delphi:e_method:src:GeodesyLib:Geodesy.TEllipsoid.GetWGS72()" />
+      <reference referencedUin="delphi:e_method:src:GeodesyLib:Geodesy.TEllipsoid.GetWGS84()" />
+      <reference referencedUin="delphi:e_property:src:GeodesyLib:Geodesy.TEllipsoid.WGS84" />
+      <reference referencedUin="delphi:e_property:src:GeodesyLib:Geodesy.TEllipsoid.GRS80" />
+      <reference referencedUin="delphi:e_property:src:GeodesyLib:Geodesy.TEllipsoid.GRS67" />
+      <reference referencedUin="delphi:e_property:src:GeodesyLib:Geodesy.TEllipsoid.ANS" />
+      <reference referencedUin="delphi:e_property:src:GeodesyLib:Geodesy.TEllipsoid.WGS72" />
+      <reference referencedUin="delphi:e_property:src:GeodesyLib:Geodesy.TEllipsoid.Clarke1858" />
+      <reference referencedUin="delphi:e_property:src:GeodesyLib:Geodesy.TEllipsoid.Clarke1880" />
+      <reference referencedUin="delphi:e_property:src:GeodesyLib:Geodesy.TEllipsoid.Sphere" />
+      <reference referencedUin="delphi:e_property:src:GeodesyLib:Geodesy.TEllipsoid.flattening" />
+      <reference referencedUin="delphi:e_property:src:GeodesyLib:Geodesy.TEllipsoid.inverseFlattening" />
+      <reference referencedUin="delphi:e_property:src:GeodesyLib:Geodesy.TEllipsoid.SemiMajorAxis" />
+      <reference referencedUin="delphi:e_property:src:GeodesyLib:Geodesy.TEllipsoid.SemiMinorAxis" />
+      <reference referencedUin="delphi:e_method:src:GeodesyLib:Geodesy.TEllipsoid.FromAAndF(System.Double,System.Double)" />
+      <reference referencedUin="delphi:e_method:src:GeodesyLib:Geodesy.TEllipsoid.FromAAndInverseF(System.Double,System.Double)" />
+      <reference referencedUin="delphi:l_ast:src:GeodesyLib:Geodesy.TEllipsoid.WGS84">
+        <property name="sourceAnchor" value="201,554" />
+        <property name="targetAnchor" value="193,562" />
+        <property name="bendpoints" value="234,554,234,595,193,595" />
+        <property name="bounds_setted_by_user" value="True" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:GeodesyLib:Geodesy.TEllipsoid.GRS80">
+        <property name="sourceAnchor" value="201,546" />
+        <property name="targetAnchor" value="185,562" />
+        <property name="bendpoints" value="242,546,242,603,185,603" />
+        <property name="bounds_setted_by_user" value="True" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:GeodesyLib:Geodesy.TEllipsoid.GRS67">
+        <property name="sourceAnchor" value="201,538" />
+        <property name="targetAnchor" value="177,562" />
+        <property name="bendpoints" value="250,538,250,611,177,611" />
+        <property name="bounds_setted_by_user" value="True" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:GeodesyLib:Geodesy.TEllipsoid.ANS">
+        <property name="sourceAnchor" value="201,530" />
+        <property name="targetAnchor" value="169,562" />
+        <property name="bendpoints" value="258,530,258,619,169,619" />
+        <property name="bounds_setted_by_user" value="True" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:GeodesyLib:Geodesy.TEllipsoid.WGS72">
+        <property name="sourceAnchor" value="201,522" />
+        <property name="targetAnchor" value="161,562" />
+        <property name="bendpoints" value="266,522,266,627,161,627" />
+        <property name="bounds_setted_by_user" value="True" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:GeodesyLib:Geodesy.TEllipsoid.Clarke1858">
+        <property name="sourceAnchor" value="201,514" />
+        <property name="targetAnchor" value="153,562" />
+        <property name="bendpoints" value="274,514,274,635,153,635" />
+        <property name="bounds_setted_by_user" value="True" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:GeodesyLib:Geodesy.TEllipsoid.Clarke1880">
+        <property name="sourceAnchor" value="201,506" />
+        <property name="targetAnchor" value="145,562" />
+        <property name="bendpoints" value="282,506,282,643,145,643" />
+        <property name="bounds_setted_by_user" value="True" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:GeodesyLib:Geodesy.TEllipsoid.Sphere">
+        <property name="sourceAnchor" value="201,498" />
+        <property name="targetAnchor" value="137,562" />
+        <property name="bendpoints" value="290,498,290,651,137,651" />
+        <property name="bounds_setted_by_user" value="True" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:GeodesyLib:Geodesy.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:GeodesyLib:Geodesy.TGeodeticCalculator">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="187,1,132,84" />
+      <reference referencedUin="delphi:e_field:src:GeodesyLib:Geodesy.TGeodeticCalculator.TwoPi" />
+    </reference>
+    <reference referencedUin="design:view:::vv01c0jovvh_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="220,104,100,151" />
+      <reference referencedUin="delphi:e_class:src:GeodesyLib:Geodesy.Angle.TAngle" />
+      <reference referencedUin="delphi:e_class:src:GeodesyLib:Geodesy.Angle.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::3gwbuo85hmq_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="220,274,158,151" />
+      <reference referencedUin="delphi:e_class:src:GeodesyLib:Geodesy.GlobalCoordinates.TGlobalCoordinates" />
+      <reference referencedUin="delphi:e_class:src:GeodesyLib:Geodesy.GlobalCoordinates.@unitclass" />
+    </reference>
+  </view>
+</nodeSet>

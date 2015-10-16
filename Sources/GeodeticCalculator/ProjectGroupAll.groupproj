@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{69709683-1698-4C27-BF54-913414546800}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="GeodesyLib.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GeodesyExample.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="GeodesyLib">
+        <MSBuild Projects="GeodesyLib.dproj"/>
+    </Target>
+    <Target Name="GeodesyLib:Clean">
+        <MSBuild Projects="GeodesyLib.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GeodesyLib:Make">
+        <MSBuild Projects="GeodesyLib.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GeodesyExample">
+        <MSBuild Projects="GeodesyExample.dproj"/>
+    </Target>
+    <Target Name="GeodesyExample:Clean">
+        <MSBuild Projects="GeodesyExample.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GeodesyExample:Make">
+        <MSBuild Projects="GeodesyExample.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="GeodesyLib;GeodesyExample"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="GeodesyLib:Clean;GeodesyExample:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="GeodesyLib:Make;GeodesyExample:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

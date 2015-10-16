@@ -1,0 +1,19 @@
+object frameLoadingMoreResults: TframeLoadingMoreResults
+  Height = 38.000000000000000000
+  Width = 324.000000000000000000
+  object MainMessage: TLabel
+    Align = alClient
+    FontColor = claDarkgray
+    StyledSettings = [ssFamily, ssSize, ssStyle]
+    Height = 38.000000000000000000
+    Text = 'Loading...'
+    TextAlign = taCenter
+    Width = 274.000000000000000000
+  end
+  object AniIndicator1: TAniIndicator
+    Align = alLeft
+    Height = 38.000000000000000000
+    Style = aiCircular
+    Width = 50.000000000000000000
+  end
+end

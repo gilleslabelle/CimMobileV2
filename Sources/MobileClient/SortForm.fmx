@@ -1,0 +1,90 @@
+object FormSort: TFormSort
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object tbSort: TToolBar
+    ControlType = Platform
+    Size.Width = 320.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object cmdQuit: TSpeedButton
+      Align = Left
+      ControlType = Platform
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 84.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      Text = 'Retour'
+      OnClick = cmdQuitClick
+    end
+    object lblTitle: TLabel
+      Align = Contents
+      ControlType = Platform
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Tri'
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 504.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    Viewport.Width = 320.000000000000000000
+    Viewport.Height = 504.000000000000000000
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Size.Width = 320.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'S'#233'lection d'#39'un tri'
+    end
+    object lbiSortNom: TListBoxItem
+      ItemData.Accessory = aCheckmark
+      Position.Y = 56.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Nom du cimeti'#232're'
+      OnClick = lbiSortNomClick
+    end
+    object lbiSortVille: TListBoxItem
+      Position.Y = 100.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Ville'
+      OnClick = lbiSortVilleClick
+    end
+    object lbiSortDistance: TListBoxItem
+      Position.Y = 144.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Distance'
+      OnClick = lbiSortDistanceClick
+    end
+  end
+end

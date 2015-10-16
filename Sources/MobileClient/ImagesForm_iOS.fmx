@@ -1,0 +1,88 @@
+object FormImages: TFormImages
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'Form1'
+  ClientHeight = 684
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Touch.GestureManager = GestureManager1
+  OnGesture = FormGesture
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 684
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 684.000000000000000000
+    BackgroundImage = 'background.png'
+    object DPFNavigationController1: TDPFNavigationController
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      Align = alClient
+      Width = 384.000000000000000000
+      Height = 684.000000000000000000
+      ToolbarVisible = False
+      object DPFNavigationControllerPage1: TDPFNavigationControllerPage
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        Align = alClient
+        Width = 384.000000000000000000
+        Height = 640.000000000000000000
+        PageIndex = 0
+        BarButtons = <
+          item
+            OnClick = DPFNavigationControllerPage1BarButtons0Click
+            Enabled = True
+            ButtonType = bkRight
+          end>
+        ToolBarButtons = <>
+        PageViewTitle = 'Images'
+        object DPFImageView2: TDPFImageView
+          Touch.InteractiveGestures = [igZoom]
+          ContentMode = vcmScaleAspectFit
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          Align = alClient
+          Width = 384.000000000000000000
+          Height = 640.000000000000000000
+          AnimationDuration = 1.000000000000000000
+          IndicatorAlpha = 0.600000023841857900
+        end
+      end
+    end
+  end
+  object GestureManager1: TGestureManager
+    Left = 120
+    Top = 224
+    GestureData = <
+      item
+        Control = Owner
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end>
+  end
+end
