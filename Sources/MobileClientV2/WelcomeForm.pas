@@ -15,11 +15,11 @@ uses
   FMX.Forms, FMX.Types, FMX.Layouts, FMX.StdCtrls, FMX.Objects, System.Classes,
 
 {$IFDEF Win32}
-  codesitelogging,
+//  codesitelogging,
 
 {$ENDIF}
 {$IFDEF Win64}
-  codesitelogging,
+//  codesitelogging,
 
 {$ENDIF}
   FMX.Controls, FMX.Controls.Presentation, FMX.ScrollBox, FMX.Memo, System.Actions, FMX.ActnList;

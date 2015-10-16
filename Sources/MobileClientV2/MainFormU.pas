@@ -5,11 +5,11 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
 {$IFDEF Win32}
-  codesitelogging,
+//  codesitelogging,
 
 {$ENDIF}
 {$IFDEF Win64}
-  codesitelogging,
+//  codesitelogging,
 
 {$ENDIF}
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.TabControl, FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base, FMX.ListView,

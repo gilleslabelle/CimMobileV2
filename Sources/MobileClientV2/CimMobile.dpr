@@ -2,11 +2,11 @@ program CimMobile;
 
 uses
   {$IFDEF Win32}
-  madExcept,
-  madLinkDisAsm,
-  madListHardware,
-  madListProcesses,
-  madListModules,
+//  madExcept,
+//  madLinkDisAsm,
+//  madListHardware,
+//  madListProcesses,
+//  madListModules,
   {$ENDIF }
   {$IFDEF Win64}
   madExcept,

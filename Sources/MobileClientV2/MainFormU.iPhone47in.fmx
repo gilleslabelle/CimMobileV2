@@ -10,39 +10,26 @@ inherited MainForm_iPhone47in: TMainForm_iPhone47in
       ExplicitSize.cx = 212.000000000000000000
       ExplicitSize.cy = 49.000000000000000000
       inherited Layout1: TLayout
-        Size.Width = 375.000000000000000000
-        Size.Height = 598.000000000000000000
-        inherited tbListCimHeader: TToolBar
-          Size.Width = 375.000000000000000000
-          inherited lblTitleCim: TLabel
-            Size.Width = 295.000000000000000000
-          end
-          inherited lblSousTitleCim: TLabel
-            Size.Width = 295.000000000000000000
-          end
-        end
         inherited TabControl2: TTabControl
-          Size.Width = 375.000000000000000000
-          Size.Height = 554.000000000000000000
           inherited TabCimList: TTabItem
-            Size.Width = 187.000000000000000000
+            Size.Width = 55.000000000000000000
             ExplicitSize.cx = 78.000000000000000000
             ExplicitSize.cy = 26.000000000000000000
           end
           inherited tabCimMap: TTabItem
-            Size.Width = 188.000000000000000000
+            Size.Width = 59.000000000000000000
             ExplicitSize.cx = 82.000000000000000000
             ExplicitSize.cy = 26.000000000000000000
-            inherited MapView1: TMapView
-              Size.Width = 375.000000000000000000
-              Size.Height = 505.000000000000000000
-            end
           end
         end
       end
       inherited MultiView1: TMultiView
+        Size.Width = 209.000000000000000000
+        Size.Height = 454.000000000000000000
         Visible = False
         inherited lbOptions: TListBox
+          Size.Width = 208.000000000000000000
+          Size.Height = 454.000000000000000000
           Viewport.Width = 208.000000000000000000
           Viewport.Height = 454.000000000000000000
           inherited ListBoxGroupHeader1: TListBoxGroupHeader

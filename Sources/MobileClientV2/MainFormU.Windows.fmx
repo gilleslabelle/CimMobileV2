@@ -23,13 +23,13 @@ inherited MainForm_Windows: TMainForm_Windows
             ExplicitSize.cx = 82.000000000000000000
             ExplicitSize.cy = 26.000000000000000000
             inherited MapView1: TMapView
-              Size.Width = 50.000000000000000000
               Size.Height = 50.000000000000000000
             end
           end
         end
       end
       inherited MultiView1: TMultiView
+        Size.Height = 454.000000000000000000
         inherited lbOptions: TListBox
           Viewport.Width = 208.000000000000000000
           Viewport.Height = 454.000000000000000000

@@ -36,12 +36,12 @@ object MainForm: TMainForm
       ExplicitSize.cy = 49.000000000000000000
       object Layout1: TLayout
         Align = Client
-        Size.Width = 483.000000000000000000
-        Size.Height = 454.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         object tbListCimHeader: TToolBar
-          Size.Width = 483.000000000000000000
+          Size.Width = 50.000000000000000000
           Size.Height = 44.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'ipadtoolbarright'
@@ -52,7 +52,6 @@ object MainForm: TMainForm
             Margins.Left = 40.000000000000000000
             Margins.Top = 3.000000000000000000
             Margins.Right = 40.000000000000000000
-            Size.Width = 403.000000000000000000
             Size.Height = 41.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'toollabel'
@@ -69,7 +68,6 @@ object MainForm: TMainForm
             Margins.Left = 40.000000000000000000
             Margins.Right = 40.000000000000000000
             Margins.Bottom = 3.000000000000000000
-            Size.Width = 403.000000000000000000
             Size.Height = 41.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'listboxheaderlabel'
@@ -86,13 +84,12 @@ object MainForm: TMainForm
             Size.PlatformDefault = False
             StyleLookup = 'detailstoolbuttonbordered'
             Text = 'actOpenDrawer'
-            Visible = False
           end
         end
         object TabControl2: TTabControl
           Align = Client
-          Size.Width = 483.000000000000000000
-          Size.Height = 410.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 6.000000000000000000
           Size.PlatformDefault = False
           TabHeight = 49.000000000000000000
           TabIndex = 1
@@ -103,7 +100,7 @@ object MainForm: TMainForm
               item
               end>
             IsSelected = False
-            Size.Width = 78.000000000000000000
+            Size.Width = 77.000000000000000000
             Size.Height = 49.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = ''
@@ -151,8 +148,7 @@ object MainForm: TMainForm
             ExplicitSize.cy = 26.000000000000000000
             object MapView1: TMapView
               Align = Client
-              Size.Width = 483.000000000000000000
-              Size.Height = 361.000000000000000000
+              Size.Width = 50.000000000000000000
               Size.PlatformDefault = False
               OnMarkerClick = MapView1MarkerClick
             end
@@ -168,8 +164,8 @@ object MainForm: TMainForm
         TabOrder = 0
         object lbOptions: TListBox
           Align = Client
-          Size.Width = 208.000000000000000000
-          Size.Height = 454.000000000000000000
+          Size.Width = 49.000000000000000000
+          Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'transparentlistboxstyle'
           TabOrder = 2

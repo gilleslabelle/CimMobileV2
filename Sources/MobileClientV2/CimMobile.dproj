@@ -6,7 +6,7 @@
         <MainSource>CimMobile.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <Platform Condition="'$(Platform)'==''">OSX32</Platform>
         <TargetedPlatforms>1103</TargetedPlatforms>
         <AppType>Application</AppType>
     </PropertyGroup>
@@ -161,35 +161,35 @@
         <VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_BundleId>com.zymasoft.cimmobile</VerInfo_BundleId>
-        <iPad_AppIcon152>C:\DataGL\Projets\Cimetieres\Images\cimmobile152x152.png</iPad_AppIcon152>
-        <iPad_AppIcon76>C:\DataGL\Projets\Cimetieres\Images\cimmobile76x76.png</iPad_AppIcon76>
-        <iPhone_AppIcon120>C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png</iPhone_AppIcon120>
-        <iPhone_AppIcon57>C:\DataGL\Projets\Cimetieres\Images\cimmobile57x57.png</iPhone_AppIcon57>
-        <iPhone_AppIcon60>C:\DataGL\Projets\Cimetieres\Images\cimmobile60x60.png</iPhone_AppIcon60>
-        <iPhone_Spotlight29>C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png</iPhone_Spotlight29>
-        <iPad_Setting29>C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png</iPad_Setting29>
-        <iPhone_Spotlight80>C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png</iPhone_Spotlight80>
-        <iPad_SpotLight80>C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png</iPad_SpotLight80>
-        <iPhone_Spotlight58>C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png</iPhone_Spotlight58>
-        <iPad_Setting58>C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png</iPad_Setting58>
-        <iPhone_Spotlight40>C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png</iPhone_Spotlight40>
-        <iPad_SpotLight40>C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png</iPad_SpotLight40>
-        <iPhone_AppIcon114>C:\DataGL\Projets\Cimetieres\Images\cimmobile114x114.png</iPhone_AppIcon114>
-        <iPad_SpotLight100>C:\DataGL\Projets\Cimetieres\Images\cimmobile100x100.png</iPad_SpotLight100>
-        <iPad_AppIcon144>C:\DataGL\Projets\Cimetieres\Images\cimmobile144x144.png</iPad_AppIcon144>
-        <iPad_SpotLight50>C:\DataGL\Projets\Cimetieres\Images\cimmobile50x50.png</iPad_SpotLight50>
-        <iPad_AppIcon72>C:\DataGL\Projets\Cimetieres\Images\cimmobile72x72.png</iPad_AppIcon72>
-        <iPad_Launch2048>C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1496.png</iPad_Launch2048>
-        <iPad_Launch1024>C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x748.png</iPad_Launch1024>
-        <iPad_Launch2048x1536>C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1536.png</iPad_Launch2048x1536>
-        <iPad_Launch1024x768>C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x768.png</iPad_Launch1024x768>
-        <iPad_Launch1536>C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2008.png</iPad_Launch1536>
-        <iPad_Launch768>C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1004.png</iPad_Launch768>
-        <iPad_Launch1536x2048>C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2048.png</iPad_Launch1536x2048>
-        <iPad_Launch768x1024>C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1024.png</iPad_Launch768x1024>
-        <iPhone_Launch640>C:\DataGL\Projets\Cimetieres\Images\cimmobile640x960.png</iPhone_Launch640>
-        <iPhone_Launch320>C:\DataGL\Projets\Cimetieres\Images\cimmobile320x480.png</iPhone_Launch320>
-        <iPhone_Launch640x1136>C:\DataGL\Projets\Cimetieres\Images\cimmobile640x1136.png</iPhone_Launch640x1136>
+        <iPad_AppIcon152>..\..\Images\cimmobile152x152.png</iPad_AppIcon152>
+        <iPad_AppIcon76>..\..\Images\cimmobile76x76.png</iPad_AppIcon76>
+        <iPhone_AppIcon120>..\..\Images\cimmobile120x120.png</iPhone_AppIcon120>
+        <iPhone_AppIcon57>..\..\Images\cimmobile57x57.png</iPhone_AppIcon57>
+        <iPhone_AppIcon60>..\..\Images\cimmobile60x60.png</iPhone_AppIcon60>
+        <iPhone_Spotlight29>..\..\Images\cimmobile29x29.png</iPhone_Spotlight29>
+        <iPad_Setting29>..\..\Images\cimmobile29x29.png</iPad_Setting29>
+        <iPhone_Spotlight80>..\..\Images\cimmobile80x80.png</iPhone_Spotlight80>
+        <iPad_SpotLight80>..\..\Images\cimmobile80x80.png</iPad_SpotLight80>
+        <iPhone_Spotlight58>..\..\Images\cimmobile58x58.png</iPhone_Spotlight58>
+        <iPad_Setting58>..\..\Images\cimmobile58x58.png</iPad_Setting58>
+        <iPhone_Spotlight40>..\..\Images\cimmobile40x40.png</iPhone_Spotlight40>
+        <iPad_SpotLight40>..\..\Images\cimmobile40x40.png</iPad_SpotLight40>
+        <iPhone_AppIcon114>..\..\Images\cimmobile114x114.png</iPhone_AppIcon114>
+        <iPad_SpotLight100>..\..\Images\cimmobile100x100.png</iPad_SpotLight100>
+        <iPad_AppIcon144>..\..\Images\cimmobile144x144.png</iPad_AppIcon144>
+        <iPad_SpotLight50>..\..\Images\cimmobile50x50.png</iPad_SpotLight50>
+        <iPad_AppIcon72>..\..\Images\cimmobile72x72.png</iPad_AppIcon72>
+        <iPad_Launch2048>..\..\Images\cimmobile2048x1496.png</iPad_Launch2048>
+        <iPad_Launch1024>..\..\Images\cimmobile1024x748.png</iPad_Launch1024>
+        <iPad_Launch2048x1536>..\..\Images\cimmobile2048x1536.png</iPad_Launch2048x1536>
+        <iPad_Launch1024x768>..\..\Images\cimmobile1024x768.png</iPad_Launch1024x768>
+        <iPad_Launch1536>..\..\Images\cimmobile1536x2008.png</iPad_Launch1536>
+        <iPad_Launch768>..\..\Images\cimmobile768x1004.png</iPad_Launch768>
+        <iPad_Launch1536x2048>..\..\Images\cimmobile1536x2048.png</iPad_Launch1536x2048>
+        <iPad_Launch768x1024>..\..\Images\cimmobile768x1024.png</iPad_Launch768x1024>
+        <iPhone_Launch640>..\..\Images\cimmobile640x960.png</iPhone_Launch640>
+        <iPhone_Launch320>..\..\Images\cimmobile320x480.png</iPhone_Launch320>
+        <iPhone_Launch640x1136>..\..\Images\cimmobile640x1136.png</iPhone_Launch640x1136>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_iOSSimulator)'!=''">
         <VerInfo_Build>1</VerInfo_Build>
@@ -202,35 +202,35 @@
         <VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
         <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDevelopmentRegion=en;CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleInfoDictionaryVersion=7.1;CFBundleVersion=1.0.1;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);UIDeviceFamily=iPhone &amp; iPad;CFBundleResourceSpecification=ResourceRules.plist;NSLocationAlwaysUsageDescription=The reason for accessing the location information of the user;NSLocationWhenInUseUsageDescription=The reason for accessing the location information of the user;FMLocalNotificationPermission=false;UIBackgroundModes=</VerInfo_Keys>
         <VerInfo_BundleId>$(MSBuildProjectName)</VerInfo_BundleId>
-        <iPad_AppIcon152>C:\DataGL\Projets\Cimetieres\Images\cimmobile152x152.png</iPad_AppIcon152>
-        <iPad_AppIcon76>C:\DataGL\Projets\Cimetieres\Images\cimmobile76x76.png</iPad_AppIcon76>
-        <iPhone_AppIcon120>C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png</iPhone_AppIcon120>
-        <iPhone_AppIcon57>C:\DataGL\Projets\Cimetieres\Images\cimmobile57x57.png</iPhone_AppIcon57>
-        <iPhone_AppIcon60>C:\DataGL\Projets\Cimetieres\Images\cimmobile60x60.png</iPhone_AppIcon60>
-        <iPhone_Spotlight29>C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png</iPhone_Spotlight29>
-        <iPad_Setting29>C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png</iPad_Setting29>
-        <iPhone_Spotlight80>C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png</iPhone_Spotlight80>
-        <iPad_SpotLight80>C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png</iPad_SpotLight80>
-        <iPhone_Spotlight58>C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png</iPhone_Spotlight58>
-        <iPad_Setting58>C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png</iPad_Setting58>
-        <iPhone_Spotlight40>C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png</iPhone_Spotlight40>
-        <iPad_SpotLight40>C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png</iPad_SpotLight40>
-        <iPhone_AppIcon114>C:\DataGL\Projets\Cimetieres\Images\cimmobile114x114.png</iPhone_AppIcon114>
-        <iPad_SpotLight100>C:\DataGL\Projets\Cimetieres\Images\cimmobile100x100.png</iPad_SpotLight100>
-        <iPad_AppIcon144>C:\DataGL\Projets\Cimetieres\Images\cimmobile144x144.png</iPad_AppIcon144>
-        <iPad_SpotLight50>C:\DataGL\Projets\Cimetieres\Images\cimmobile50x50.png</iPad_SpotLight50>
-        <iPad_AppIcon72>C:\DataGL\Projets\Cimetieres\Images\cimmobile72x72.png</iPad_AppIcon72>
-        <iPad_Launch2048>C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1496.png</iPad_Launch2048>
-        <iPad_Launch1024>C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x748.png</iPad_Launch1024>
-        <iPad_Launch2048x1536>C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1536.png</iPad_Launch2048x1536>
-        <iPad_Launch1024x768>C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x768.png</iPad_Launch1024x768>
-        <iPad_Launch1536>C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2008.png</iPad_Launch1536>
-        <iPad_Launch768>C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1004.png</iPad_Launch768>
-        <iPad_Launch1536x2048>C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2048.png</iPad_Launch1536x2048>
-        <iPad_Launch768x1024>C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1024.png</iPad_Launch768x1024>
-        <iPhone_Launch640>C:\DataGL\Projets\Cimetieres\Images\cimmobile640x960.png</iPhone_Launch640>
-        <iPhone_Launch320>C:\DataGL\Projets\Cimetieres\Images\cimmobile320x480.png</iPhone_Launch320>
-        <iPhone_Launch640x1136>C:\DataGL\Projets\Cimetieres\Images\cimmobile640x1136.png</iPhone_Launch640x1136>
+        <iPad_AppIcon152>..\..\Images\cimmobile152x152.png</iPad_AppIcon152>
+        <iPad_AppIcon76>..\..\Images\cimmobile76x76.png</iPad_AppIcon76>
+        <iPhone_AppIcon120>..\..\Images\cimmobile120x120.png</iPhone_AppIcon120>
+        <iPhone_AppIcon57>..\..\Images\cimmobile57x57.png</iPhone_AppIcon57>
+        <iPhone_AppIcon60>..\..\Images\cimmobile60x60.png</iPhone_AppIcon60>
+        <iPhone_Spotlight29>..\..\Images\cimmobile29x29.png</iPhone_Spotlight29>
+        <iPad_Setting29>..\..\Images\cimmobile29x29.png</iPad_Setting29>
+        <iPhone_Spotlight80>..\..\Images\cimmobile80x80.png</iPhone_Spotlight80>
+        <iPad_SpotLight80>..\..\Images\cimmobile80x80.png</iPad_SpotLight80>
+        <iPhone_Spotlight58>..\..\Images\cimmobile58x58.png</iPhone_Spotlight58>
+        <iPad_Setting58>..\..\Images\cimmobile58x58.png</iPad_Setting58>
+        <iPhone_Spotlight40>..\..\Images\cimmobile40x40.png</iPhone_Spotlight40>
+        <iPad_SpotLight40>..\..\Images\cimmobile40x40.png</iPad_SpotLight40>
+        <iPhone_AppIcon114>..\..\Images\cimmobile114x114.png</iPhone_AppIcon114>
+        <iPad_SpotLight100>..\..\Images\cimmobile100x100.png</iPad_SpotLight100>
+        <iPad_AppIcon144>..\..\Images\cimmobile144x144.png</iPad_AppIcon144>
+        <iPad_SpotLight50>..\..\Images\cimmobile50x50.png</iPad_SpotLight50>
+        <iPad_AppIcon72>..\..\Images\cimmobile72x72.png</iPad_AppIcon72>
+        <iPad_Launch2048>..\..\Images\cimmobile2048x1496.png</iPad_Launch2048>
+        <iPad_Launch1024>..\..\Images\cimmobile1024x748.png</iPad_Launch1024>
+        <iPad_Launch2048x1536>..\..\Images\cimmobile2048x1536.png</iPad_Launch2048x1536>
+        <iPad_Launch1024x768>..\..\Images\cimmobile1024x768.png</iPad_Launch1024x768>
+        <iPad_Launch1536>..\..\Images\cimmobile1536x2008.png</iPad_Launch1536>
+        <iPad_Launch768>..\..\Images\cimmobile768x1004.png</iPad_Launch768>
+        <iPad_Launch1536x2048>..\..\Images\cimmobile1536x2048.png</iPad_Launch1536x2048>
+        <iPad_Launch768x1024>..\..\Images\cimmobile768x1024.png</iPad_Launch768x1024>
+        <iPhone_Launch640>..\..\Images\cimmobile640x960.png</iPhone_Launch640>
+        <iPhone_Launch320>..\..\Images\cimmobile320x480.png</iPhone_Launch320>
+        <iPhone_Launch640x1136>..\..\Images\cimmobile640x1136.png</iPhone_Launch640x1136>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_OSX32)'!=''">
         <EL_Location>true</EL_Location>
@@ -327,35 +327,35 @@
         <DCC_DebugInformation>0</DCC_DebugInformation>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_iOSDevice32)'!=''">
-        <iPhone_Launch640x1136>C:\DataGL\Projets\Cimetieres\Images\cimmobile640x1136.png</iPhone_Launch640x1136>
-        <iPad_Launch1024>C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x748.png</iPad_Launch1024>
-        <iPad_AppIcon152>C:\DataGL\Projets\Cimetieres\Images\cimmobile152x152.png</iPad_AppIcon152>
-        <iPhone_AppIcon114>C:\DataGL\Projets\Cimetieres\Images\cimmobile114x114.png</iPhone_AppIcon114>
-        <iPad_SpotLight80>C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png</iPad_SpotLight80>
-        <iPhone_Spotlight80>C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png</iPhone_Spotlight80>
-        <iPad_SpotLight40>C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png</iPad_SpotLight40>
-        <iPad_SpotLight50>C:\DataGL\Projets\Cimetieres\Images\cimmobile50x50.png</iPad_SpotLight50>
-        <iPhone_AppIcon120>C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png</iPhone_AppIcon120>
-        <iPad_Setting58>C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png</iPad_Setting58>
-        <iPad_Launch1536>C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2008.png</iPad_Launch1536>
-        <iPhone_Spotlight58>C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png</iPhone_Spotlight58>
-        <iPad_Launch2048>C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1496.png</iPad_Launch2048>
-        <iPhone_Spotlight29>C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png</iPhone_Spotlight29>
-        <iPad_Setting29>C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png</iPad_Setting29>
-        <iPad_Launch1536x2048>C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2048.png</iPad_Launch1536x2048>
-        <iPad_Launch2048x1536>C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1536.png</iPad_Launch2048x1536>
-        <iPhone_Launch320>C:\DataGL\Projets\Cimetieres\Images\cimmobile320x480.png</iPhone_Launch320>
-        <iPhone_Launch640>C:\DataGL\Projets\Cimetieres\Images\cimmobile640x960.png</iPhone_Launch640>
-        <iPhone_AppIcon57>C:\DataGL\Projets\Cimetieres\Images\cimmobile57x57.png</iPhone_AppIcon57>
-        <iPhone_AppIcon60>C:\DataGL\Projets\Cimetieres\Images\cimmobile60x60.png</iPhone_AppIcon60>
-        <iPad_AppIcon72>C:\DataGL\Projets\Cimetieres\Images\cimmobile72x72.png</iPad_AppIcon72>
-        <iPad_Launch768x1024>C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1024.png</iPad_Launch768x1024>
-        <iPad_AppIcon76>C:\DataGL\Projets\Cimetieres\Images\cimmobile76x76.png</iPad_AppIcon76>
-        <iPad_SpotLight100>C:\DataGL\Projets\Cimetieres\Images\cimmobile100x100.png</iPad_SpotLight100>
-        <iPhone_Spotlight40>C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png</iPhone_Spotlight40>
-        <iPad_AppIcon144>C:\DataGL\Projets\Cimetieres\Images\cimmobile144x144.png</iPad_AppIcon144>
-        <iPad_Launch768>C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1004.png</iPad_Launch768>
-        <iPad_Launch1024x768>C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x768.png</iPad_Launch1024x768>
+        <iPhone_Launch640x1136>..\..\Images\cimmobile640x1136.png</iPhone_Launch640x1136>
+        <iPad_Launch1024>..\..\Images\cimmobile1024x748.png</iPad_Launch1024>
+        <iPad_AppIcon152>..\..\Images\cimmobile152x152.png</iPad_AppIcon152>
+        <iPhone_AppIcon114>..\..\Images\cimmobile114x114.png</iPhone_AppIcon114>
+        <iPad_SpotLight80>..\..\Images\cimmobile80x80.png</iPad_SpotLight80>
+        <iPhone_Spotlight80>..\..\Images\cimmobile80x80.png</iPhone_Spotlight80>
+        <iPad_SpotLight40>..\..\Images\cimmobile40x40.png</iPad_SpotLight40>
+        <iPad_SpotLight50>..\..\Images\cimmobile50x50.png</iPad_SpotLight50>
+        <iPhone_AppIcon120>..\..\Images\cimmobile120x120.png</iPhone_AppIcon120>
+        <iPad_Setting58>..\..\Images\cimmobile58x58.png</iPad_Setting58>
+        <iPad_Launch1536>..\..\Images\cimmobile1536x2008.png</iPad_Launch1536>
+        <iPhone_Spotlight58>..\..\Images\cimmobile58x58.png</iPhone_Spotlight58>
+        <iPad_Launch2048>..\..\Images\cimmobile2048x1496.png</iPad_Launch2048>
+        <iPhone_Spotlight29>..\..\Images\cimmobile29x29.png</iPhone_Spotlight29>
+        <iPad_Setting29>..\..\Images\cimmobile29x29.png</iPad_Setting29>
+        <iPad_Launch1536x2048>..\..\Images\cimmobile1536x2048.png</iPad_Launch1536x2048>
+        <iPad_Launch2048x1536>..\..\Images\cimmobile2048x1536.png</iPad_Launch2048x1536>
+        <iPhone_Launch320>..\..\Images\cimmobile320x480.png</iPhone_Launch320>
+        <iPhone_Launch640>..\..\Images\cimmobile640x960.png</iPhone_Launch640>
+        <iPhone_AppIcon57>..\..\Images\cimmobile57x57.png</iPhone_AppIcon57>
+        <iPhone_AppIcon60>..\..\Images\cimmobile60x60.png</iPhone_AppIcon60>
+        <iPad_AppIcon72>..\..\Images\cimmobile72x72.png</iPad_AppIcon72>
+        <iPad_Launch768x1024>..\..\Images\cimmobile768x1024.png</iPad_Launch768x1024>
+        <iPad_AppIcon76>..\..\Images\cimmobile76x76.png</iPad_AppIcon76>
+        <iPad_SpotLight100>..\..\Images\cimmobile100x100.png</iPad_SpotLight100>
+        <iPhone_Spotlight40>..\..\Images\cimmobile40x40.png</iPhone_Spotlight40>
+        <iPad_AppIcon144>..\..\Images\cimmobile144x144.png</iPad_AppIcon144>
+        <iPad_Launch768>..\..\Images\cimmobile768x1004.png</iPad_Launch768>
+        <iPad_Launch1024x768>..\..\Images\cimmobile1024x768.png</iPad_Launch1024x768>
         <VerInfo_Build>18</VerInfo_Build>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
@@ -458,86 +458,41 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="2">
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile50x50.png" Configuration="Debug" Class="iPad_SpotLight50">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1004.png" Configuration="Debug" Class="iPad_Launch768">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="..\..\Db\Cimetieres.db" Configuration="Debug" Class="File">
                     <Platform Name="Win32">
                         <RemoteName>Cimetieres.db</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile100x100.png" Configuration="Debug" Class="iPad_SpotLight100">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile152x152.png" Configuration="Debug" Class="iPad_AppIcon152">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile57x57.png" Configuration="Debug" Class="iPhone_AppIcon57">
+                <DeployFile LocalName="..\..\Images\cimmobile144x144.png" Configuration="Debug" Class="iPad_AppIcon144">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile50x50.png" Configuration="Debug" Class="iPad_SpotLight50">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png" Configuration="Debug" Class="iPhone_Spotlight29">
+                <DeployFile LocalName="..\..\Images\cimmobile768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024">
                     <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2008.png" Configuration="Debug" Class="iPad_Launch1536">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Portrait@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768">
+                <DeployFile LocalName="..\..\Images\cimmobile1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
                     <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png" Configuration="Debug" Class="iPad_Setting58">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2048.png" Configuration="Release" Class="iPad_Launch1536x2048">
-                    <Platform Name="iOSDevice64">
                         <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1024.png" Configuration="Release" Class="iPad_Launch768x1024">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
+                <DeployFile LocalName="..\..\Images\cimmobile76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
+                    <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
+                <DeployFile LocalName="..\..\Images\cimmobile144x144.png" Configuration="Debug" Class="iPad_AppIcon144">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile58x58.png" Configuration="Debug" Class="iPad_Setting58">
+                    <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -547,37 +502,13 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default-568h@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png" Configuration="Release" Class="iPad_Setting58">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x768.png" Configuration="Release" Class="iPad_Launch1024x768">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Configuration="Release" Class="iPhone_AppIcon180">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x768.png" Configuration="Release" Class="iPad_Launch1024x768">
+                <DeployFile LocalName="..\..\Images\cimmobile114x114.png" Configuration="Release" Class="iPhone_AppIcon114">
                     <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile320x480.png" Configuration="Release" Class="iPhone_Launch320">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -587,9 +518,19 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile114x114.png" Configuration="Debug" Class="iPhone_AppIcon114">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Configuration="Debug" Class="iPhone_Launch750">
                     <Platform Name="iOSDevice64">
                         <RemoteName>Default-667h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile100x100.png" Configuration="Debug" Class="iPad_SpotLight100">
+                    <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -599,14 +540,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1024.png" Configuration="Release" Class="iPad_Launch768x1024">
+                <DeployFile LocalName="..\..\Images\cimmobile2048x1536.png" Configuration="Debug" Class="iPad_Launch2048x1536">
                     <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png" Configuration="Debug" Class="iPad_SpotLight80">
-                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -616,8 +552,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile144x144.png" Configuration="Debug" Class="iPad_AppIcon144">
+                <DeployFile LocalName="..\..\Images\cimmobile120x120.png" Configuration="Release" Class="iPhone_AppIcon120">
                     <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -627,25 +569,46 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png" Configuration="Release" Class="iPad_SpotLight80">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Configuration="Debug" Class="iPhone_Launch750">
                     <Platform Name="iOSSimulator">
                         <RemoteName>Default-667h@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x748.png" Configuration="Release" Class="iPad_Launch1024">
+                <DeployFile LocalName="..\..\Images\cimmobile29x29.png" Configuration="Release" Class="iPad_Setting29">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile57x57.png" Configuration="Debug" Class="iPhone_AppIcon57">
                     <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\delphi_PROJECTICNS.icns" Configuration="Debug" Class="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteName>CimMobile.icns</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile144x144.png" Configuration="Release" Class="iPad_AppIcon144">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile72x72.png" Configuration="Release" Class="iPad_AppIcon72">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX32\Debug\CimMobile.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList">
+                    <Platform Name="OSX32">
+                        <RemoteName>Info.plist</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -656,24 +619,13 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png" Configuration="Debug" Class="iPad_SpotLight40">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="OSX32">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile144x144.png" Configuration="Release" Class="iPad_AppIcon144">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x748.png" Configuration="Debug" Class="iPad_Launch1024">
+                <DeployFile LocalName="..\..\Images\cimmobile50x50.png" Configuration="Release" Class="iPad_SpotLight50">
                     <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -683,21 +635,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile320x480.png" Configuration="Debug" Class="iPhone_Launch320">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x748.png" Configuration="Release" Class="iPad_Launch1024">
+                <DeployFile LocalName="..\..\Images\cimmobile2048x1496.png" Configuration="Debug" Class="iPad_Launch2048">
                     <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Landscape.png</RemoteName>
+                        <RemoteName>Default-Landscape@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-568h@2x.png</RemoteName>
+                <DeployFile LocalName="..\..\Images\cimmobile50x50.png" Configuration="Debug" Class="iPad_SpotLight50">
+                    <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -707,32 +652,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile114x114.png" Configuration="Release" Class="iPhone_AppIcon114">
+                <DeployFile LocalName="..\..\Images\cimmobile80x80.png" Configuration="Release" Class="iPad_SpotLight80">
                     <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1496.png" Configuration="Debug" Class="iPad_Launch2048">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Landscape@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default-568h@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1004.png" Configuration="Release" Class="iPad_Launch768">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x960.png" Configuration="Debug" Class="iPhone_Launch640">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -741,14 +662,25 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png" Configuration="Debug" Class="iPhone_AppIcon120">
+                <DeployFile LocalName="..\..\Images\cimmobile640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-568h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile768x1004.png" Configuration="Release" Class="iPad_Launch768">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile60x60.png" Configuration="Release" Class="iPhone_AppIcon60">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1496.png" Configuration="Debug" Class="iPad_Launch2048">
+                <DeployFile LocalName="..\..\Images\cimmobile40x40.png" Configuration="Debug" Class="iPhone_Spotlight40">
                     <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -757,20 +689,15 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile114x114.png" Configuration="Debug" Class="iPhone_AppIcon114">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2008.png" Configuration="Release" Class="iPad_Launch1536">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Portrait@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="iOSDevice64\Release\ResourceRules.plist" Configuration="Release" Class="ProjectiOSDeviceResourceRules">
                     <Platform Name="iOSDevice64">
                         <RemoteName>ResourceRules.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile640x960.png" Configuration="Debug" Class="iPhone_Launch640">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -782,23 +709,6 @@
                 <DeployFile LocalName="iOSDevice64\Debug\CimMobile.dSYM" Configuration="Debug" Class="ProjectiOSDeviceDebug">
                     <Platform Name="iOSDevice64">
                         <RemoteName>CimMobile</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1004.png" Configuration="Release" Class="iPad_Launch768">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1496.png" Configuration="Release" Class="iPad_Launch2048">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -814,20 +724,19 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile76x76.png" Configuration="Release" Class="iPad_AppIcon76">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2008.png" Configuration="Release" Class="iPad_Launch1536">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Portrait@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2048.png" Configuration="Release" Class="iPad_Launch1536x2048">
+                <DeployFile LocalName="..\..\Images\cimmobile152x152.png" Configuration="Release" Class="iPad_AppIcon152">
                     <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile40x40.png" Configuration="Release" Class="iPad_SpotLight40">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile768x1024.png" Configuration="Release" Class="iPad_Launch768x1024">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -844,6 +753,40 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile1024x768.png" Configuration="Release" Class="iPad_Launch1024x768">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile1536x2048.png" Configuration="Release" Class="iPad_Launch1536x2048">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile1536x2008.png" Configuration="Release" Class="iPad_Launch1536">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX32\Debug\CimMobile" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="OSX32">
+                        <RemoteName>CimMobile</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile40x40.png" Configuration="Debug" Class="iPad_SpotLight40">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile100x100.png" Configuration="Debug" Class="iPad_SpotLight100">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="..\..\Db\Cimetieres.db" Configuration="Release" Class="File">
                     <Platform Name="iOSDevice32">
                         <RemoteDir>StartUp\Documents\</RemoteDir>
@@ -851,30 +794,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile60x60.png" Configuration="Release" Class="iPhone_AppIcon60">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
+                <DeployFile LocalName="..\..\Images\cimmobile1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768">
                     <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png" Configuration="Debug" Class="iPad_SpotLight80">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="..\..\Db\Cimetieres.db" Configuration="Debug" Class="File">
-                    <Platform Name="iOSSimulator">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>Cimetieres.db</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
-                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -884,20 +806,44 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="..\..\Db\Cimetieres.db" Configuration="Debug" Class="File">
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>Cimetieres.db</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Configuration="Release" Class="iPhone_AppIcon87">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x960.png" Configuration="Debug" Class="iPhone_Launch640">
+                <DeployFile LocalName="..\..\Images\cimmobile768x1024.png" Configuration="Release" Class="iPad_Launch768x1024">
                     <Platform Name="iOSDevice64">
-                        <RemoteName>Default@2x.png</RemoteName>
+                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1536.png" Configuration="Debug" Class="iPad_Launch2048x1536">
+                <DeployFile LocalName="..\..\Images\cimmobile1024x748.png" Configuration="Release" Class="iPad_Launch1024">
                     <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+                        <RemoteName>Default-Landscape.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile40x40.png" Configuration="Release" Class="iPad_SpotLight40">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile1024x748.png" Configuration="Debug" Class="iPad_Launch1024">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile1024x748.png" Configuration="Debug" Class="iPad_Launch1024">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Landscape.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -907,13 +853,19 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile100x100.png" Configuration="Release" Class="iPad_SpotLight100">
+                <DeployFile LocalName="..\..\Images\cimmobile29x29.png" Configuration="Release" Class="iPad_Setting29">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile114x114.png" Configuration="Release" Class="iPhone_AppIcon114">
+                <DeployFile LocalName="..\..\Images\cimmobile640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136">
                     <Platform Name="iOSSimulator">
+                        <RemoteName>Default-568h@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -923,19 +875,49 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png" Configuration="Release" Class="iPad_SpotLight40">
+                <DeployFile LocalName="..\..\Images\cimmobile2048x1496.png" Configuration="Release" Class="iPad_Launch2048">
                     <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
+                <DeployFile LocalName="..\..\Images\cimmobile76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
                     <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile72x72.png" Configuration="Release" Class="iPad_AppIcon72">
+                <DeployFile LocalName="iOSSimulator\Debug\CimMobile.rsm" Configuration="Debug" Class="DebugSymbols">
                     <Platform Name="iOSSimulator">
+                        <RemoteName>CimMobile.rsm</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile100x100.png" Configuration="Release" Class="iPad_SpotLight100">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile640x960.png" Configuration="Release" Class="iPhone_Launch640">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX32\Debug\CimMobile.rsm" Configuration="Debug" Class="DebugSymbols">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS\</RemoteDir>
+                        <RemoteName>CimMobile.rsm</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile29x29.png" Configuration="Debug" Class="iPad_Setting29">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile1536x2008.png" Configuration="Release" Class="iPad_Launch1536">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Portrait@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -944,19 +926,19 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png" Configuration="Debug" Class="iPad_Setting58">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Configuration="Debug" Class="iPhone_AppIcon180">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1536.png" Configuration="Release" Class="iPad_Launch2048x1536">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+                <DeployFile LocalName="..\..\Images\cimmobile120x120.png" Configuration="Debug" Class="iPhone_AppIcon120">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-568h@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -966,25 +948,15 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1536.png" Configuration="Release" Class="iPad_Launch2048x1536">
+                <DeployFile LocalName="..\..\Images\cimmobile2048x1536.png" Configuration="Release" Class="iPad_Launch2048x1536">
                     <Platform Name="iOSDevice64">
                         <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile50x50.png" Configuration="Release" Class="iPad_SpotLight50">
+                <DeployFile LocalName="..\..\Images\cimmobile640x960.png" Configuration="Debug" Class="iPhone_Launch640">
                     <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1004.png" Configuration="Debug" Class="iPad_Launch768">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile76x76.png" Configuration="Release" Class="iPad_AppIcon76">
-                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -994,13 +966,13 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile100x100.png" Configuration="Debug" Class="iPad_SpotLight100">
-                    <Platform Name="iOSDevice64">
+                <DeployFile LocalName="OSX32\Release\CimMobile.entitlements" Configuration="Release" Class="ProjectOSXEntitlements">
+                    <Platform Name="OSX32">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="OSX32\Release\CimMobile.entitlements" Configuration="Release" Class="ProjectOSXEntitlements">
-                    <Platform Name="OSX32">
+                <DeployFile LocalName="..\..\Images\cimmobile57x57.png" Configuration="Debug" Class="iPhone_AppIcon57">
+                    <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1011,35 +983,48 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile60x60.png" Configuration="Release" Class="iPhone_AppIcon60">
+                <DeployFile LocalName="..\..\Images\cimmobile1024x748.png" Configuration="Release" Class="iPad_Launch1024">
                     <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png" Configuration="Release" Class="iPhone_AppIcon120">
+                <DeployFile LocalName="..\..\Images\cimmobile768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile120x120.png" Configuration="Release" Class="iPhone_AppIcon120">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x960.png" Configuration="Release" Class="iPhone_Launch640">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile114x114.png" Configuration="Debug" Class="iPhone_AppIcon114">
+                <DeployFile LocalName="..\..\Images\cimmobile120x120.png" Configuration="Debug" Class="iPhone_AppIcon120">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile144x144.png" Configuration="Release" Class="iPad_AppIcon144">
+                <DeployFile LocalName="..\..\Images\cimmobile60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile320x480.png" Configuration="Debug" Class="iPhone_Launch320">
+                <DeployFile LocalName="..\..\Images\cimmobile1536x2048.png" Configuration="Release" Class="iPad_Launch1536x2048">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
                     <Platform Name="iOSDevice64">
-                        <RemoteName>Default.png</RemoteName>
+                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile2048x1496.png" Configuration="Debug" Class="iPad_Launch2048">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1049,33 +1034,34 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1536.png" Configuration="Debug" Class="iPad_Launch2048x1536">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+                <DeployFile LocalName="OSX32\Debug\CimMobile.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements">
+                    <Platform Name="OSX32">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile152x152.png" Configuration="Release" Class="iPad_AppIcon152">
+                <DeployFile LocalName="..\..\Images\cimmobile2048x1496.png" Configuration="Release" Class="iPad_Launch2048">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Landscape@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile80x80.png" Configuration="Debug" Class="iPad_SpotLight80">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile152x152.png" Configuration="Debug" Class="iPad_AppIcon152">
+                <DeployFile LocalName="..\..\Images\cimmobile152x152.png" Configuration="Release" Class="iPad_AppIcon152">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile144x144.png" Configuration="Debug" Class="iPad_AppIcon144">
+                <DeployFile LocalName="..\..\Images\cimmobile768x1004.png" Configuration="Debug" Class="iPad_Launch768">
                     <Platform Name="iOSDevice64">
+                        <RemoteName>Default~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png" Configuration="Release" Class="iPad_Setting29">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile100x100.png" Configuration="Release" Class="iPad_SpotLight100">
+                <DeployFile LocalName="..\..\Images\cimmobile57x57.png" Configuration="Release" Class="iPhone_AppIcon57">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -1086,14 +1072,15 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png" Configuration="Debug" Class="iPhone_AppIcon120">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Configuration="Release" Class="iPhone_Launch750">
                     <Platform Name="iOSDevice64">
                         <RemoteName>Default-667h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile640x960.png" Configuration="Release" Class="iPhone_Launch640">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1103,30 +1090,35 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile114x114.png" Configuration="Release" Class="iPhone_AppIcon114">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile144x144.png" Configuration="Release" Class="iPad_AppIcon144">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="..\..\Db\Cimetieres.db" Configuration="Release" Class="File">
                     <Platform Name="Win64">
                         <RemoteName>Cimetieres.db</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
+                <DeployFile LocalName="..\..\Images\cimmobile58x58.png" Configuration="Release" Class="iPad_Setting58">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png" Configuration="Debug" Class="iPad_Setting29">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png" Configuration="Release" Class="iPad_Setting29">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1496.png" Configuration="Release" Class="iPad_Launch2048">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Landscape@2x.png</RemoteName>
+                <DeployFile LocalName="..\..\Images\cimmobile1536x2008.png" Configuration="Debug" Class="iPad_Launch1536">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1147,13 +1139,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile152x152.png" Configuration="Release" Class="iPad_AppIcon152">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile57x57.png" Configuration="Release" Class="iPhone_AppIcon57">
-                    <Platform Name="iOSDevice64">
+                <DeployFile LocalName="..\..\Images\cimmobile768x1004.png" Configuration="Debug" Class="iPad_Launch768">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1162,46 +1150,46 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x748.png" Configuration="Debug" Class="iPad_Launch1024">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Landscape.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024">
+                <DeployFile LocalName="..\..\Images\cimmobile80x80.png" Configuration="Release" Class="iPad_SpotLight80">
                     <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png" Configuration="Release" Class="iPad_Setting58">
+                <DeployFile LocalName="..\..\Images\cimmobile114x114.png" Configuration="Debug" Class="iPhone_AppIcon114">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
+                <DeployFile LocalName="..\..\Images\cimmobile72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile57x57.png" Configuration="Debug" Class="iPhone_AppIcon57">
+                <DeployFile LocalName="..\..\Images\cimmobile2048x1536.png" Configuration="Release" Class="iPad_Launch2048x1536">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile58x58.png" Configuration="Release" Class="iPad_Setting58">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile320x480.png" Configuration="Debug" Class="iPhone_Launch320">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile152x152.png" Configuration="Debug" Class="iPad_AppIcon152">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile57x57.png" Configuration="Release" Class="iPhone_AppIcon57">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png" Configuration="Release" Class="iPad_SpotLight80">
-                    <Platform Name="iOSSimulator">
+                <DeployFile LocalName="..\..\Images\cimmobile768x1004.png" Configuration="Release" Class="iPad_Launch768">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1215,18 +1203,24 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2008.png" Configuration="Debug" Class="iPad_Launch1536">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Portrait@2x.png</RemoteName>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png" Configuration="Release" Class="iPhone_AppIcon120">
+                <DeployFile LocalName="..\..\Images\cimmobile76x76.png" Configuration="Release" Class="iPad_AppIcon76">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
+                <DeployFile LocalName="..\..\Images\cimmobile320x480.png" Configuration="Release" Class="iPhone_Launch320">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile60x60.png" Configuration="Release" Class="iPhone_AppIcon60">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -1237,15 +1231,13 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208">
+                <DeployFile LocalName="..\..\Images\cimmobile100x100.png" Configuration="Release" Class="iPad_SpotLight100">
                     <Platform Name="iOSDevice64">
-                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x960.png" Configuration="Release" Class="iPhone_Launch640">
+                <DeployFile LocalName="..\..\Images\cimmobile72x72.png" Configuration="Release" Class="iPad_AppIcon72">
                     <Platform Name="iOSSimulator">
-                        <RemoteName>Default@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1256,8 +1248,15 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile50x50.png" Configuration="Release" Class="iPad_SpotLight50">
+                <DeployFile LocalName="..\..\Images\cimmobile2048x1536.png" Configuration="Debug" Class="iPad_Launch2048x1536">
                     <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile320x480.png" Configuration="Debug" Class="iPhone_Launch320">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1273,14 +1272,31 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136">
-                    <Platform Name="iOSSimulator">
+                <DeployFile LocalName="..\..\Images\cimmobile640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice64">
                         <RemoteName>Default-568h@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png" Configuration="Debug" Class="iPhone_Spotlight40">
+                <DeployFile LocalName="..\..\Images\cimmobile1536x2008.png" Configuration="Debug" Class="iPad_Launch1536">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Portrait@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile320x480.png" Configuration="Release" Class="iPhone_Launch320">
                     <Platform Name="iOSSimulator">
+                        <RemoteName>Default.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile50x50.png" Configuration="Release" Class="iPad_SpotLight50">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile152x152.png" Configuration="Debug" Class="iPad_AppIcon152">
+                    <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1290,13 +1306,28 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile58x58.png" Configuration="Debug" Class="iPad_Setting58">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="iOSSimulator\Debug\CimMobile" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="iOSSimulator">
                         <RemoteName>CimMobile</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile29x29.png" Configuration="Debug" Class="iPhone_Spotlight29">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Configuration="Debug" Class="iPhone_AppIcon87">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile76x76.png" Configuration="Release" Class="iPad_AppIcon76">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -1307,24 +1338,29 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile1024x768.png" Configuration="Release" Class="iPad_Launch1024x768">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\..\Images\cimmobile50x50.png" Configuration="Debug" Class="iPad_SpotLight50">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="iOSSimulator\Release\CimMobile.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png" Configuration="Release" Class="iPad_SpotLight40">
+                <DeployFile LocalName="..\..\Images\cimmobile57x57.png" Configuration="Release" Class="iPhone_AppIcon57">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile72x72.png" Configuration="Release" Class="iPad_AppIcon72">
+                <DeployFile LocalName="..\..\Images\cimmobile80x80.png" Configuration="Debug" Class="iPad_SpotLight80">
                     <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="C:\DataGL\Projets\Cimetieres\Images\cimmobile320x480.png" Configuration="Release" Class="iPhone_Launch320">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Default.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

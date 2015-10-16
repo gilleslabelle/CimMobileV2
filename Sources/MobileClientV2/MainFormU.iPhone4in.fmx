@@ -10,46 +10,35 @@ inherited MainForm_iPhone4in: TMainForm_iPhone4in
       ExplicitSize.cx = 212.000000000000000000
       ExplicitSize.cy = 49.000000000000000000
       inherited Layout1: TLayout
-        Size.Width = 320.000000000000000000
-        Size.Height = 499.000000000000000000
-        inherited tbListCimHeader: TToolBar
-          Size.Width = 320.000000000000000000
-          inherited lblTitleCim: TLabel
-            Size.Width = 240.000000000000000000
-          end
-          inherited lblSousTitleCim: TLabel
-            Size.Width = 240.000000000000000000
-          end
-        end
         inherited TabControl2: TTabControl
-          Size.Width = 320.000000000000000000
-          Size.Height = 455.000000000000000000
           TabIndex = 0
           inherited TabCimList: TTabItem
             IsSelected = True
-            Size.Width = 160.000000000000000000
+            Size.Width = 55.000000000000000000
             ExplicitSize.cx = 78.000000000000000000
             ExplicitSize.cy = 26.000000000000000000
             inherited lvCimetieres: TListView
-              Size.Width = 320.000000000000000000
-              Size.Height = 406.000000000000000000
+              Size.Height = 0.000000000000000000
             end
           end
           inherited tabCimMap: TTabItem
             IsSelected = False
-            Size.Width = 160.000000000000000000
+            Size.Width = 59.000000000000000000
             ExplicitSize.cx = 82.000000000000000000
             ExplicitSize.cy = 26.000000000000000000
             inherited MapView1: TMapView
-              Size.Width = 50.000000000000000000
               Size.Height = 50.000000000000000000
             end
           end
         end
       end
       inherited MultiView1: TMultiView
+        Size.Width = 209.000000000000000000
+        Size.Height = 454.000000000000000000
         Visible = False
         inherited lbOptions: TListBox
+          Size.Width = 208.000000000000000000
+          Size.Height = 454.000000000000000000
           Viewport.Width = 208.000000000000000000
           Viewport.Height = 454.000000000000000000
           inherited ListBoxGroupHeader1: TListBoxGroupHeader

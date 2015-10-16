@@ -10,8 +10,7 @@ inherited MainForm_iPad: TMainForm_iPad
       ExplicitSize.cx = 212.000000000000000000
       ExplicitSize.cy = 49.000000000000000000
       inherited Layout1: TLayout
-        Size.Width = 479.000000000000000000
-        Size.Height = 955.000000000000000000
+        Size.Width = 0.000000000000000000
         inherited tbListCimHeader: TToolBar
           Size.Width = 479.000000000000000000
           inherited lblTitleCim: TLabel
@@ -20,17 +19,20 @@ inherited MainForm_iPad: TMainForm_iPad
           inherited lblSousTitleCim: TLabel
             Size.Width = 399.000000000000000000
           end
+          inherited cmdShowOptions: TSpeedButton
+            Visible = False
+          end
         end
         inherited TabControl2: TTabControl
           Size.Width = 479.000000000000000000
           Size.Height = 911.000000000000000000
           inherited TabCimList: TTabItem
-            Size.Width = 239.000000000000000000
+            Size.Width = 55.000000000000000000
             ExplicitSize.cx = 78.000000000000000000
             ExplicitSize.cy = 26.000000000000000000
           end
           inherited tabCimMap: TTabItem
-            Size.Width = 240.000000000000000000
+            Size.Width = 59.000000000000000000
             ExplicitSize.cx = 82.000000000000000000
             ExplicitSize.cy = 26.000000000000000000
             inherited MapView1: TMapView
@@ -43,16 +45,14 @@ inherited MainForm_iPad: TMainForm_iPad
       inherited MultiView1: TMultiView
         Mode = Panel
         Size.Width = 289.000000000000000000
-        Size.Height = 955.000000000000000000
         inherited lbOptions: TListBox
           Size.Width = 288.000000000000000000
-          Size.Height = 955.000000000000000000
           ItemHeight = 50.000000000000000000
           Viewport.Width = 288.000000000000000000
           Viewport.Height = 955.000000000000000000
           inherited ListBoxGroupHeader1: TListBoxGroupHeader
             Size.Width = 288.000000000000000000
-            Size.Height = 50.000000000000000000
+            Size.Height = 56.000000000000000000
           end
           inherited lbFilter: TListBoxItem
             Position.Y = 50.000000000000000000
@@ -68,7 +68,7 @@ inherited MainForm_iPad: TMainForm_iPad
             ImageIndex = 0
             Position.Y = 150.000000000000000000
             Size.Width = 288.000000000000000000
-            Size.Height = 50.000000000000000000
+            Size.Height = 56.000000000000000000
           end
           inherited lbiSortNom: TListBoxItem
             Position.Y = 200.000000000000000000
@@ -88,7 +88,7 @@ inherited MainForm_iPad: TMainForm_iPad
           inherited ListBoxGroupHeader2: TListBoxGroupHeader
             Position.Y = 350.000000000000000000
             Size.Width = 288.000000000000000000
-            Size.Height = 50.000000000000000000
+            Size.Height = 56.000000000000000000
           end
           inherited lbiAfficheList: TListBoxItem
             Position.Y = 400.000000000000000000

@@ -34,83 +34,11 @@
         </DeployFile>
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='iOSDevice64'">
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1004.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile144x144.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch768</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile57x57.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile57x57.png</RemoteName>
-            <DeployClass>iPhone_AppIcon57</DeployClass>
+            <RemoteName>cimmobile144x144.png</RemoteName>
+            <DeployClass>iPad_AppIcon144</DeployClass>
             <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile50x50.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile50x50.png</RemoteName>
-            <DeployClass>iPad_SpotLight50</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2008.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Portrait@2x.png</RemoteName>
-            <DeployClass>iPad_Launch1536</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x768.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch1024x768</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2048.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch1536x2048</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1024.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Portrait~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch768x1024</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1024.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Portrait~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch768x1024</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x1136.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-568h@2x.png</RemoteName>
-            <DeployClass>iPhone_Launch640x1136</DeployClass>
-            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -124,10 +52,10 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x768.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile114x114.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <RemoteName>cimmobile114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -142,10 +70,10 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile1024x768.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile80x80.png</RemoteName>
-            <DeployClass>iPad_SpotLight80</DeployClass>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -161,25 +89,16 @@
             <Overwrite>True</Overwrite>
             <Required>True</Required>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile29x29.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile80x80.png</RemoteName>
-            <DeployClass>iPad_SpotLight80</DeployClass>
+            <RemoteName>cimmobile29x29.png</RemoteName>
+            <DeployClass>iPad_Setting29</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile40x40.png</RemoteName>
-            <DeployClass>iPad_SpotLight40</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile144x144.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile144x144.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>cimmobile144x144.png</RemoteName>
             <DeployClass>iPad_AppIcon144</DeployClass>
@@ -188,11 +107,29 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x748.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile72x72.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape.png</RemoteName>
-            <DeployClass>iPad_Launch1024</DeployClass>
+            <RemoteName>cimmobile72x72.png</RemoteName>
+            <DeployClass>iPad_AppIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile2048x1496.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2048</DeployClass>
             <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile50x50.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -206,37 +143,10 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile114x114.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile80x80.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile114x114.png</RemoteName>
-            <DeployClass>iPhone_AppIcon114</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1496.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape@2x.png</RemoteName>
-            <DeployClass>iPad_Launch2048</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x1136.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-568h@2x.png</RemoteName>
-            <DeployClass>iPhone_Launch640x1136</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile114x114.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile114x114.png</RemoteName>
-            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <RemoteName>cimmobile80x80.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -251,19 +161,19 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="iOSDevice64\Debug\CimMobile.dSYM" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
-            <RemoteName>CimMobile</RemoteName>
-            <DeployClass>ProjectiOSDeviceDebug</DeployClass>
+        <DeployFile Include="..\..\Images\cimmobile640x960.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1004.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch768</DeployClass>
+        <DeployFile Include="iOSDevice64\Debug\CimMobile.dSYM" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>CimMobile</RemoteName>
+            <DeployClass>ProjectiOSDeviceDebug</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -279,20 +189,11 @@
             <Overwrite>True</Overwrite>
             <Required>True</Required>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile76x76.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile40x40.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile76x76.png</RemoteName>
-            <DeployClass>iPad_AppIcon76</DeployClass>
+            <RemoteName>cimmobile40x40.png</RemoteName>
+            <DeployClass>iPad_SpotLight40</DeployClass>
             <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2008.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Portrait@2x.png</RemoteName>
-            <DeployClass>iPad_Launch1536</DeployClass>
-            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -306,19 +207,28 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile60x60.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile1536x2048.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile60x60.png</RemoteName>
-            <DeployClass>iPhone_AppIcon60</DeployClass>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile76x76.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile40x40.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile76x76.png</RemoteName>
-            <DeployClass>iPad_AppIcon76</DeployClass>
+            <RemoteName>cimmobile40x40.png</RemoteName>
+            <DeployClass>iPad_SpotLight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile100x100.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile100x100.png</RemoteName>
+            <DeployClass>iPad_SpotLight100</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -333,20 +243,29 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x960.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile768x1024.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default@2x.png</RemoteName>
-            <DeployClass>iPhone_Launch640</DeployClass>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile1024x748.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1536.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile1024x748.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch2048x1536</DeployClass>
-            <Operation>0</Operation>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
+            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -360,29 +279,38 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile100x100.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile60x60.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile100x100.png</RemoteName>
-            <DeployClass>iPad_SpotLight100</DeployClass>
+            <RemoteName>cimmobile60x60.png</RemoteName>
+            <DeployClass>iPhone_AppIcon60</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2048.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile76x76.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <RemoteName>cimmobile76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile29x29.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile58x58.png</RemoteName>
-            <DeployClass>iPad_Setting58</DeployClass>
+            <RemoteName>cimmobile29x29.png</RemoteName>
+            <DeployClass>iPad_Setting29</DeployClass>
             <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile1536x2008.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <DeployClass>iPad_Launch1536</DeployClass>
+            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -396,7 +324,25 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1536.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile120x120.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile640x1136.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile2048x1536.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
             <DeployClass>iPad_Launch2048x1536</DeployClass>
@@ -405,10 +351,10 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile100x100.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile57x57.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile100x100.png</RemoteName>
-            <DeployClass>iPad_SpotLight100</DeployClass>
+            <RemoteName>cimmobile57x57.png</RemoteName>
+            <DeployClass>iPhone_AppIcon57</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -423,7 +369,16 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile768x1024.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile120x120.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>cimmobile120x120.png</RemoteName>
             <DeployClass>iPhone_AppIcon120</DeployClass>
@@ -432,25 +387,25 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x960.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile1536x2048.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default@2x.png</RemoteName>
-            <DeployClass>iPhone_Launch640</DeployClass>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile2048x1496.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2048</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile320x480.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default.png</RemoteName>
-            <DeployClass>iPhone_Launch320</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile152x152.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile152x152.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>cimmobile152x152.png</RemoteName>
             <DeployClass>iPad_AppIcon152</DeployClass>
@@ -459,20 +414,11 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile144x144.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile768x1004.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile144x144.png</RemoteName>
-            <DeployClass>iPad_AppIcon144</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile120x120.png</RemoteName>
-            <DeployClass>iPhone_AppIcon120</DeployClass>
-            <Operation>0</Operation>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -486,38 +432,20 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile72x72.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile640x960.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile72x72.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>cimmobile72x72.png</RemoteName>
             <DeployClass>iPad_AppIcon72</DeployClass>
             <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile29x29.png</RemoteName>
-            <DeployClass>iPad_Setting29</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile29x29.png</RemoteName>
-            <DeployClass>iPad_Setting29</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1496.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape@2x.png</RemoteName>
-            <DeployClass>iPad_Launch2048</DeployClass>
-            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -549,24 +477,6 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile152x152.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile152x152.png</RemoteName>
-            <DeployClass>iPad_AppIcon152</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile57x57.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile57x57.png</RemoteName>
-            <DeployClass>iPhone_AppIcon57</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="iOSDevice64\Debug\CimMobile.entitlements" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\../\</RemoteDir>
             <RemoteName>CimMobile.entitlements</RemoteName>
@@ -576,16 +486,16 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x748.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile114x114.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape.png</RemoteName>
-            <DeployClass>iPad_Launch1024</DeployClass>
-            <Operation>1</Operation>
+            <RemoteName>cimmobile114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile58x58.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>cimmobile58x58.png</RemoteName>
             <DeployClass>iPad_Setting58</DeployClass>
@@ -594,11 +504,11 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile60x60.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile768x1004.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile60x60.png</RemoteName>
-            <DeployClass>iPhone_AppIcon60</DeployClass>
-            <Operation>0</Operation>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -607,6 +517,33 @@
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
             <DeployClass>iPhone_Launch2208</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile320x480.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <DeployClass>iPhone_Launch320</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile60x60.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile60x60.png</RemoteName>
+            <DeployClass>iPhone_AppIcon60</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile100x100.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile100x100.png</RemoteName>
+            <DeployClass>iPad_SpotLight100</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -621,11 +558,20 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile50x50.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile2048x1536.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile50x50.png</RemoteName>
-            <DeployClass>iPad_SpotLight50</DeployClass>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch2048x1536</DeployClass>
             <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile320x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <DeployClass>iPhone_Launch320</DeployClass>
+            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -648,10 +594,64 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile640x1136.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile1536x2008.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <DeployClass>iPad_Launch1536</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile50x50.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile152x152.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile152x152.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile58x58.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>FM_ApplicationIcon_87x87.png</RemoteName>
             <DeployClass>iPhone_AppIcon87</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile76x76.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -666,29 +666,29 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile1024x768.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile40x40.png</RemoteName>
-            <DeployClass>iPad_SpotLight40</DeployClass>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile72x72.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile57x57.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile72x72.png</RemoteName>
-            <DeployClass>iPad_AppIcon72</DeployClass>
+            <RemoteName>cimmobile57x57.png</RemoteName>
+            <DeployClass>iPhone_AppIcon57</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile320x480.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile80x80.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default.png</RemoteName>
-            <DeployClass>iPhone_Launch320</DeployClass>
-            <Operation>1</Operation>
+            <RemoteName>cimmobile80x80.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -705,6 +705,24 @@
             <Overwrite>True</Overwrite>
             <Required>True</Required>
         </DeployFile>
+        <DeployFile Include="$(BDS)\bin\delphi_PROJECTICNS.icns" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\Contents\Resources\</RemoteDir>
+            <RemoteName>CimMobile.icns</RemoteName>
+            <DeployClass>ProjectOSXResource</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX32\Debug\CimMobile.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\Contents\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectOSXInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
             <RemoteDir>CimMobile.app\Contents\MacOS\</RemoteDir>
             <RemoteName>libcgunwind.1.0.dylib</RemoteName>
@@ -714,10 +732,29 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="OSX32\Debug\CimMobile" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>CimMobile</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
         <DeployFile Include="OSX32\Release\CimMobile.info.plist" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\Contents\</RemoteDir>
             <RemoteName>Info.plist</RemoteName>
             <DeployClass>ProjectOSXInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX32\Debug\CimMobile.rsm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>CimMobile.rsm</RemoteName>
+            <DeployClass>DebugSymbols</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -733,6 +770,15 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="OSX32\Release\CimMobile.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\../\</RemoteDir>
+            <RemoteName>CimMobile.entitlements</RemoteName>
+            <DeployClass>ProjectOSXEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX32\Debug\CimMobile.entitlements" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\../\</RemoteDir>
             <RemoteName>CimMobile.entitlements</RemoteName>
             <DeployClass>ProjectOSXEntitlements</DeployClass>
@@ -793,83 +839,65 @@
         </DeployFile>
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile50x50.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile768x1024.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile50x50.png</RemoteName>
-            <DeployClass>iPad_SpotLight50</DeployClass>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile100x100.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile1536x2048.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile76x76.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile144x144.png</RemoteName>
+            <DeployClass>iPad_AppIcon144</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile58x58.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile114x114.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile100x100.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>cimmobile100x100.png</RemoteName>
             <DeployClass>iPad_SpotLight100</DeployClass>
             <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile152x152.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile152x152.png</RemoteName>
-            <DeployClass>iPad_AppIcon152</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile29x29.png</RemoteName>
-            <DeployClass>iPhone_Spotlight29</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x768.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch1024x768</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile58x58.png</RemoteName>
-            <DeployClass>iPad_Setting58</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile58x58.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile58x58.png</RemoteName>
-            <DeployClass>iPad_Setting58</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x768.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch1024x768</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile320x480.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default.png</RemoteName>
-            <DeployClass>iPhone_Launch320</DeployClass>
-            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -884,10 +912,10 @@
             <Overwrite>True</Overwrite>
             <Required>True</Required>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1024.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile2048x1536.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Portrait~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch2048x1536</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -902,10 +930,10 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile144x144.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile120x120.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile144x144.png</RemoteName>
-            <DeployClass>iPad_AppIcon144</DeployClass>
+            <RemoteName>cimmobile120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -920,11 +948,11 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x748.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile57x57.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape.png</RemoteName>
-            <DeployClass>iPad_Launch1024</DeployClass>
-            <Operation>1</Operation>
+            <RemoteName>cimmobile57x57.png</RemoteName>
+            <DeployClass>iPhone_AppIcon57</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -947,47 +975,11 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1024x748.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile50x50.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape.png</RemoteName>
-            <DeployClass>iPad_Launch1024</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile320x480.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default.png</RemoteName>
-            <DeployClass>iPhone_Launch320</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x1136.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-568h@2x.png</RemoteName>
-            <DeployClass>iPhone_Launch640x1136</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1004.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch768</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x960.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default@2x.png</RemoteName>
-            <DeployClass>iPhone_Launch640</DeployClass>
-            <Operation>1</Operation>
+            <RemoteName>cimmobile50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -1001,20 +993,38 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile640x1136.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile120x120.png</RemoteName>
-            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile768x1004.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile60x60.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile60x60.png</RemoteName>
+            <DeployClass>iPhone_AppIcon60</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1496.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile40x40.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape@2x.png</RemoteName>
-            <DeployClass>iPad_Launch2048</DeployClass>
-            <Operation>1</Operation>
+            <RemoteName>cimmobile40x40.png</RemoteName>
+            <DeployClass>iPhone_Spotlight40</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -1028,38 +1038,11 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2008.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Portrait@2x.png</RemoteName>
-            <DeployClass>iPad_Launch1536</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
             <DeployClass>iPhone_AppIcon180</DeployClass>
             <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile60x60.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile60x60.png</RemoteName>
-            <DeployClass>iPhone_AppIcon60</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1496.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape@2x.png</RemoteName>
-            <DeployClass>iPad_Launch2048</DeployClass>
-            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -1073,28 +1056,46 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2048.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile152x152.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <RemoteName>cimmobile152x152.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile72x72.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile768x1024.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile72x72.png</RemoteName>
-            <DeployClass>iPad_AppIcon72</DeployClass>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile1024x768.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile80x80.png</RemoteName>
-            <DeployClass>iPad_SpotLight80</DeployClass>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile1536x2008.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <DeployClass>iPad_Launch1536</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile1024x768.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -1109,16 +1110,7 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile114x114.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile114x114.png</RemoteName>
-            <DeployClass>iPhone_AppIcon114</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile40x40.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>cimmobile40x40.png</RemoteName>
             <DeployClass>iPad_SpotLight40</DeployClass>
@@ -1127,11 +1119,65 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile72x72.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile1024x748.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile72x72.png</RemoteName>
-            <DeployClass>iPad_AppIcon72</DeployClass>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile29x29.png</RemoteName>
+            <DeployClass>iPad_Setting29</DeployClass>
             <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile640x1136.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile2048x1496.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2048</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\CimMobile.rsm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>CimMobile.rsm</RemoteName>
+            <DeployClass>DebugSymbols</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile100x100.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile100x100.png</RemoteName>
+            <DeployClass>iPad_SpotLight100</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile640x960.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
+            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -1145,43 +1191,34 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1536.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile640x960.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch2048x1536</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile50x50.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile50x50.png</RemoteName>
-            <DeployClass>iPad_SpotLight50</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1004.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch768</DeployClass>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile76x76.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile1024x748.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile76x76.png</RemoteName>
-            <DeployClass>iPad_AppIcon76</DeployClass>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile120x120.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile60x60.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile60x60.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>cimmobile60x60.png</RemoteName>
             <DeployClass>iPhone_AppIcon60</DeployClass>
@@ -1190,20 +1227,20 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile114x114.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile1536x2048.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile114x114.png</RemoteName>
-            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile144x144.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile2048x1496.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile144x144.png</RemoteName>
-            <DeployClass>iPad_AppIcon144</DeployClass>
-            <Operation>0</Operation>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <DeployClass>iPad_Launch2048</DeployClass>
+            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -1217,37 +1254,19 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile2048x1536.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile80x80.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch2048x1536</DeployClass>
+            <RemoteName>cimmobile80x80.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile152x152.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile57x57.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile152x152.png</RemoteName>
-            <DeployClass>iPad_AppIcon152</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile29x29.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile29x29.png</RemoteName>
-            <DeployClass>iPad_Setting29</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile100x100.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile100x100.png</RemoteName>
-            <DeployClass>iPad_SpotLight100</DeployClass>
+            <RemoteName>cimmobile57x57.png</RemoteName>
+            <DeployClass>iPhone_AppIcon57</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -1271,55 +1290,91 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile768x1024.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile114x114.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Portrait~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <RemoteName>cimmobile114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile76x76.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile144x144.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile76x76.png</RemoteName>
-            <DeployClass>iPad_AppIcon76</DeployClass>
+            <RemoteName>cimmobile144x144.png</RemoteName>
+            <DeployClass>iPad_AppIcon144</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile57x57.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile58x58.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile57x57.png</RemoteName>
-            <DeployClass>iPhone_AppIcon57</DeployClass>
+            <RemoteName>cimmobile58x58.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2048.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile1536x2008.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch1536x2048</DeployClass>
-            <Operation>0</Operation>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <DeployClass>iPad_Launch1536</DeployClass>
+            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile57x57.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile768x1004.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile57x57.png</RemoteName>
-            <DeployClass>iPhone_AppIcon57</DeployClass>
-            <Operation>0</Operation>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile80x80.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile80x80.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
             <RemoteName>cimmobile80x80.png</RemoteName>
             <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile72x72.png</RemoteName>
+            <DeployClass>iPad_AppIcon72</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile2048x1536.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch2048x1536</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile320x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <DeployClass>iPhone_Launch320</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile152x152.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile152x152.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -1343,19 +1398,10 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile1536x2008.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="..\..\Images\cimmobile76x76.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-Portrait@2x.png</RemoteName>
-            <DeployClass>iPad_Launch1536</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile120x120.png" Condition="'$(Config)'=='Release'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile120x120.png</RemoteName>
-            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <RemoteName>cimmobile76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -1370,29 +1416,20 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x960.png" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="..\..\Images\cimmobile72x72.png" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default@2x.png</RemoteName>
-            <DeployClass>iPhone_Launch640</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile640x1136.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>Default-568h@2x.png</RemoteName>
-            <DeployClass>iPhone_Launch640x1136</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\DataGL\Projets\Cimetieres\Images\cimmobile40x40.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>CimMobile.app\</RemoteDir>
-            <RemoteName>cimmobile40x40.png</RemoteName>
-            <DeployClass>iPhone_Spotlight40</DeployClass>
+            <RemoteName>cimmobile72x72.png</RemoteName>
+            <DeployClass>iPad_AppIcon72</DeployClass>
             <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile320x480.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <DeployClass>iPhone_Launch320</DeployClass>
+            <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -1415,6 +1452,24 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
             <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile29x29.png</RemoteName>
+            <DeployClass>iPhone_Spotlight29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\Images\cimmobile50x50.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>CimMobile.app\</RemoteDir>
+            <RemoteName>cimmobile50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="iOSSimulator\Release\CimMobile.entitlements" Condition="'$(Config)'=='Release'">
             <RemoteDir>CimMobile.app\</RemoteDir>
