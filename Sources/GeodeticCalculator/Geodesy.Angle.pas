@@ -1,5 +1,5 @@
 unit Geodesy.Angle;
-/// * Gavaghan.Geodesy by Mike Gavaghan
+// Gavaghan.Geodesy by Mike Gavaghan
 // *
 // * http://www.gavaghan.org/blog/free-source-code/geodesy-library-vincentys-formula/
 // *
